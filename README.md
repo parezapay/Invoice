@@ -1,2 +1,2 @@
-# Invoice
-Invoice Platform 
+# ParezaPay Invoice
+Invoice Platform for ParezaPay
