@@ -1,0 +1,8 @@
+#Specific files and folders
+.buildpath
+.project
+.settings/
+.htaccess
+ipconfig.php
+application/config/database.php
+application/config/config.php
