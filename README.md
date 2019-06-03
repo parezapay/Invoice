@@ -1,2 +1,2 @@
-# Invoice-
+# Invoice
 Invoice Platform 
