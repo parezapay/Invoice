@@ -115,6 +115,8 @@ class Invoices extends Admin_Controller
         header('Content-Disposition: attachment; filename="' . urldecode($invoice) . '"');
         readfile(UPLOADS_ARCHIVE_FOLDER . urldecode($invoice));
     }
+    /* pareza function created  */
+    
     public function createinvoice(){
         $this->load->module('layout');
         $this->load->model('invoice_groups/mdl_invoice_groups');
