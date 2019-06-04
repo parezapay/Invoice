@@ -118,6 +118,12 @@ class Invoices extends Admin_Controller
     /* pareza function created  */
     
     public function createinvoice(){
+       
+        if($this->input->post('client_id')>0)
+            $cid= $this->input->post('client_id');
+        if($this->uri->segment('3')>0)
+            $cid= $this->uri->segment('3');
+        
         $this->load->module('layout');
         $this->load->model('invoice_groups/mdl_invoice_groups');
         $this->load->model('tax_rates/mdl_tax_rates');
@@ -126,15 +132,18 @@ class Invoices extends Admin_Controller
         $data = [
             'invoice_groups' => $this->mdl_invoice_groups->get()->result(),
             'tax_rates' => $this->mdl_tax_rates->get()->result(),
-            'client' => $this->mdl_clients->get_by_id($this->input->post('client_id')),
+            'client' => $this->mdl_clients->get_by_id($cid),
             'clients' => $this->mdl_clients->get_latest(),
         ];
         
         $invoice_groups= $this->mdl_invoice_groups->get()->result();
-        
+        $client= $this->mdl_clients->get_by_id($cid);
+        $tax_rates = $this->mdl_tax_rates->get()->result();
+        $clients = $this->mdl_clients->get_latest();
         $this->layout->set(
             [
-                'invoice_groups' => $invoice_groups,
+                'invoice_groups' => $invoice_groups,'client' => $client,
+                'tax_rates' => $tax_rates,'clients' => $clients,
             ]);
         
        // $this->layout->load_view('invoices/modal_create_invoice', $data);

@@ -41,7 +41,11 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="client-create-invoice"
+                            <!--   <a href="#" class="client-create-invoice"   
+                                   data-client-id="<?php //echo $client->client_id; ?>">
+                                    <i class="fa fa-file-text fa-margin"></i> <?php // _trans('create_invoice'); ?>
+                                </a>-->
+                                 <a href="<?php echo site_url('invoices/createinvoice/' . $client->client_id); ?>" class="client-create-invoice"   
                                    data-client-id="<?php echo $client->client_id; ?>">
                                     <i class="fa fa-file-text fa-margin"></i> <?php _trans('create_invoice'); ?>
                                 </a>
