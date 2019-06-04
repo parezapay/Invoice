@@ -115,12 +115,39 @@ class Invoices extends Admin_Controller
         header('Content-Disposition: attachment; filename="' . urldecode($invoice) . '"');
         readfile(UPLOADS_ARCHIVE_FOLDER . urldecode($invoice));
     }
+    public function createinvoice(){
+        $this->load->module('layout');
+        $this->load->model('invoice_groups/mdl_invoice_groups');
+        $this->load->model('tax_rates/mdl_tax_rates');
+        $this->load->model('clients/mdl_clients');
+        
+        $data = [
+            'invoice_groups' => $this->mdl_invoice_groups->get()->result(),
+            'tax_rates' => $this->mdl_tax_rates->get()->result(),
+            'client' => $this->mdl_clients->get_by_id($this->input->post('client_id')),
+            'clients' => $this->mdl_clients->get_latest(),
+        ];
+        
+        $invoice_groups= $this->mdl_invoice_groups->get()->result();
+        
+        $this->layout->set(
+            [
+                'invoice_groups' => $invoice_groups,
+            ]);
+        
+       // $this->layout->load_view('invoices/modal_create_invoice', $data);
+        $this->layout->buffer('content', 'invoices/createinvoice');
+        $this->layout->render();
+        
+    }
 
     /**
      * @param $invoice_id
      */
     public function view($invoice_id)
     {
+        
+        
         $this->load->model(
             [
                 'mdl_items',
@@ -201,7 +228,7 @@ class Invoices extends Admin_Controller
                 'invoice_statuses' => $this->mdl_invoices->statuses(),
             ]
         );
-
+    
         if ($invoice->sumex_id != null) {
             $this->layout->buffer(
                 [
