@@ -128,9 +128,9 @@
                 <button class="btn btn-success ajax-loader" id="invoice_create_confirm" type="button">
                     <i class="fa fa-check"></i> <?php _trans('submit'); ?>
                 </button>
-                <button class="btn btn-danger" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i> <?php _trans('cancel'); ?>
-                </button>
+                <a href="#" class="create-invoice">
+           
+                <?php echo anchor('invoices/index', trans('cancel'), array("class"=>'btn btn-danger')); ?>
             </div>
         </div>
 
