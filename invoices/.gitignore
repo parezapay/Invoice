@@ -5,7 +5,7 @@
 
 # Dependencies
 /node_modules
-/vendor
+vendor
 
 # Other files
 /.htaccess
