@@ -61,7 +61,7 @@
 </script>
 
  
-    <form class="modal-content frmclass">
+    <form class="modal-content">
         <div class="modal-header">
              <h4 class="panel-title"><?php _trans('create_invoice'); ?></h4>
         </div>
