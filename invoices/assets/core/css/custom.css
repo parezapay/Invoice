@@ -18,11 +18,46 @@
    .input-group .input-group-addon{ background-color:#fff; border-right: 1px solid #e0e7ee; border-top: 1px solid #e0e7ee; border-bottom: 1px solid #e0e7ee; border-left: none;}
    .input-group .input-group-addon .fa-calendar{ color:#90a1b5;}
    .form-group #invoice_password{ max-width: 600px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
-   .select2-container--default .select2-selection--single .select2-selection__rendered{ color: #000000;  font-size: 16px; font-weight: 400; line-height: 30px;}
+   /*.select2-container--default .select2-selection--single .select2-selection__rendered{ color: #000000;  font-size: 16px; font-weight: 400; line-height: 30px;}*/
    .modal-footer .btn-group .btn{ margin:0px; padding:0px;}
    .modal-footer .btn-group .btn-success{ float:right;  background:none; border:none; color: #00a3ff; font-size: 18px; font-weight: 400; text-transform: uppercase; margin-top:30px;}
    .modal-footer .btn-group .btn-success .fa-check{ display: none;}
    .modal-footer .btn-group .btn-danger{ background:none; border:none; color: #7d8b9b; font-size: 18px; font-weight: 400; text-transform: uppercase; margin-top:30px; padding-right:30px;}
-   
    .input-group #toggle_permissive_search_clients{display: none;}
+   
+   /*#main-area{ max-width: 1300px; height: auto; margin:0px auto; box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff;}*/
+   #headerbar h1.headerbar-title{ color: #000000;font-size: 16px;font-weight: 400; line-height: 60px;}
+   #headerbar .headerbar-item .options { min-width: 192px; height: 42px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin: 15px 30px 15px 0px;}
+   #headerbar .headerbar-item .options a{ background:none; border:none; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 35px; text-transform: uppercase;}
+   #headerbar .headerbar-item .options .fa-caret-down{ position: absolute; left: 160px; top: 12px;}
+   #headerbar .headerbar-item  #btn_save_invoice{ min-width: 192px; height: 42px; border-radius: 5px; background-color: #0f68b2; border:none; color: #ffffff; font-size: 16px; font-weight: 400; line-height: 35px; text-transform: uppercase; margin: 15px 0px 15px 0px;}
+   #headerbar .headerbar-item  #btn_save_invoice .fa-check{ display: none;}
+   #headerbar{ border-bottom: 1px dashed #00a3ff;}
+   hr{ border:none; margin:0px;}
+   #invoice_form .invoice h3 a{ color: #0f68b2; font-size: 20px; font-weight: 400; text-transform: uppercase;}
+   #invoice_form .invoice .client-address{ color: #000000; font-size: 16px; font-weight: 400; line-height: 18px;}
+   #invoice_form .invoice .details-box{ border:none;}
+   .invoice .invoice-properties label{ color: #90a1b5; font-size: 15px; font-weight: 400; line-height: 30px;}
+   .invoice .invoice-properties .input-sm{ min-width: 192px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff; }
+   .input-sm + .select2 .select2-selection { min-width: 192px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff; line-height: 30px; color: #000000; font-size: 16px; font-weight: 400;
+}
+   .invoice .invoice-properties .input-group{ min-width: 192px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
+   .invoice .invoice-properties #invoice_date_created{ border:none;}
+   .invoice .invoice-properties #invoice_date_due{ border:none;}
+   .invoice .invoice-properties .input-group-addon{ border:none;}
+   #invoice_form .invoice .btn-group{ }
+   #invoice_form .invoice .btn-group .btn_add_row{ min-width: 140px; height: 42px; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin-right:20px;}
+   #invoice_form .invoice .btn-group .btn_add_product{ min-width: 140px; color: #0f68b2; font-size: 16px; height: 42px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin-right:20px;}
+   #invoice_form .invoice .btn-group .btn_add_task{ min-width: 140px; height: 42px; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff;}
+   #invoice_form .invoice .panel-default{ border:none; background:none; width:100%;}
+   #invoice_form .invoice .panel-default .panel-heading{ border:none; background:none; padding: 0px 15px !important; color: #90a1b5;  font-size: 15px; font-weight: 400;}
+   #invoice_form .invoice .panel-default .panel-body .btn-default{ width: 192px;height: 42px; border-radius: 5px;border: 1px solid #0f68b2; background-color: #ffffff;
+   color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 18px;}
+   #invoice_form .invoice .panel-default .panel-body #invoice_terms{ max-width: 636px; height: 126px;  border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
+   #invoice_form .invoice .table-bordered{ border:1px solid red;}
+   
+   
+   
+   
+   
    /*New Style*/
