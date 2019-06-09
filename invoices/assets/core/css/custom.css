@@ -4,3 +4,25 @@
 
    All changes made in this file will override the default styles.
    ========================================================================== */
+   
+   /*New Style*/
+   .modal-content{ max-width: 600px; margin: 0px auto; box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff; border-radius:0px; padding:30px; }
+   .modal-header{ border-bottom: 1px dashed #00a3ff; padding:0px;}
+   .modal-body{ padding:0px; margin:35px 0px 45px 0px;}
+   .panel-title{ color: #0f68b2; font-size: 20px; font-weight: 400; text-transform: uppercase; margin:15px 0px 30px 0px;}
+   .modal-footer{ border-top: 1px dashed #00a3ff; padding:0px;}
+   .form-group label{ color: #90a1b5; font-size: 15px; font-weight: 400; line-height: 14px;}
+   .select2-container--default .select2-selection--single{ max-width: 600px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #fffff;}
+   .input-group{ max-width: 600px; height: 42px; border-radius: 5px;  background-color: #ffffff;}
+   .input-group .datepicker{ max-width: 600px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; border-right: none; color: #000000;  font-size: 16px; font-weight: 400; line-height: 18px;}
+   .input-group .input-group-addon{ background-color:#fff; border-right: 1px solid #e0e7ee; border-top: 1px solid #e0e7ee; border-bottom: 1px solid #e0e7ee; border-left: none;}
+   .input-group .input-group-addon .fa-calendar{ color:#90a1b5;}
+   .form-group #invoice_password{ max-width: 600px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
+   .select2-container--default .select2-selection--single .select2-selection__rendered{ color: #000000;  font-size: 16px; font-weight: 400; line-height: 30px;}
+   .modal-footer .btn-group .btn{ margin:0px; padding:0px;}
+   .modal-footer .btn-group .btn-success{ float:right;  background:none; border:none; color: #00a3ff; font-size: 18px; font-weight: 400; text-transform: uppercase; margin-top:30px;}
+   .modal-footer .btn-group .btn-success .fa-check{ display: none;}
+   .modal-footer .btn-group .btn-danger{ background:none; border:none; color: #7d8b9b; font-size: 18px; font-weight: 400; text-transform: uppercase; margin-top:30px; padding-right:30px;}
+   
+   .input-group #toggle_permissive_search_clients{display: none;}
+   /*New Style*/
