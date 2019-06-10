@@ -25,7 +25,7 @@
    .modal-footer .btn-group .btn-danger{ background:none; border:none; color: #7d8b9b; font-size: 18px; font-weight: 400; text-transform: uppercase; margin-top:30px; padding-right:30px;}
    .input-group #toggle_permissive_search_clients{display: none;}
    
-   /*#main-area{ max-width: 1300px; height: auto; margin:0px auto; box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff;}*/
+   /*#main-area{ max-width: 1300px; height: auto; margin:0px auto; box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff;*/
    #headerbar h1.headerbar-title{ color: #000000;font-size: 16px;font-weight: 400; line-height: 60px;}
    #headerbar .headerbar-item .options { min-width: 192px; height: 42px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin: 15px 30px 15px 0px;}
    #headerbar .headerbar-item .options a{ background:none; border:none; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 35px; text-transform: uppercase;}
@@ -46,18 +46,62 @@
    .invoice .invoice-properties #invoice_date_due{ border:none;}
    .invoice .invoice-properties .input-group-addon{ border:none;}
    #invoice_form .invoice .btn-group{ }
-   #invoice_form .invoice .btn-group .btn_add_row{ min-width: 140px; height: 42px; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin-right:20px;}
-   #invoice_form .invoice .btn-group .btn_add_product{ min-width: 140px; color: #0f68b2; font-size: 16px; height: 42px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin-right:20px;}
-   #invoice_form .invoice .btn-group .btn_add_task{ min-width: 140px; height: 42px; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff;}
+   #invoice_form .invoice .btn-group .btn_add_row{ width: auto; height: 42px; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin-right:20px;}
+   #invoice_form .invoice .btn-group .btn_add_product{ width: auto; color: #0f68b2; font-size: 16px; height: 42px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin-right:20px;}
+   #invoice_form .invoice .btn-group .btn_add_task{ width: auto; height: 42px; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff;}
    #invoice_form .invoice .panel-default{ border:none; background:none; width:100%;}
    #invoice_form .invoice .panel-default .panel-heading{ border:none; background:none; padding: 0px 15px !important; color: #90a1b5;  font-size: 15px; font-weight: 400;}
    #invoice_form .invoice .panel-default .panel-body .btn-default{ width: 192px;height: 42px; border-radius: 5px;border: 1px solid #0f68b2; background-color: #ffffff;
    color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 18px;}
    #invoice_form .invoice .panel-default .panel-body #invoice_terms{ max-width: 636px; height: 126px;  border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
-   #invoice_form .invoice .table-bordered{ border:1px solid red;}
+   .select2-container--default .select2-search--dropdown .select2-search__field{ height:42px;}
    
    
+   #invoice_form .invoice .table-responsive .input-group .input-group-addon{ border:none; float:left; color: #90a1b5;  font-size: 15px; font-weight: 400; line-height: 18px; text-transform: uppercase; padding:0px; margin-bottom:10px;}
+   #invoice_form .invoice .table-responsive  #item_table .form-control{ min-width: 175px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
+   #invoice_form .invoice .table-responsive .table-bordered > tbody > tr > td{ border:none;}
+   #invoice_form .invoice .table-responsive .table-bordered{ border:none;}
+   #invoice_form .invoice .table-responsive .table > tbody + tbody{ border:none;}
+   #invoice_form .invoice .table-responsive .table.items td.td-amount{/*width: 150px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;*/ color: #90a1b5; font-size: 15px; font-weight: 600; line-height: 14px;}
+   #invoice_form .invoice .table-responsive{ padding:10px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
+   #invoice_form .invoice .table-responsive .input-group select { }
    
+   .navbar-inverse { box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff;}
+    .navbar-inverse .navbar-nav > li > a{ color: #445870; font-size: 16px; font-weight: 400; line-height: 18px;}
+   .navbar-inverse .navbar-nav > li > a:hover{ color:#fff; background-color:#0f68b2;}
+   /*.dropdown-menu > li{ height:42px; line-height:42px;}*/
+   .navbar .navbar-nav .fa{ display: none;}
+   .navbar .navbar-header .img{ margin: 11px 35px 11px 0px;}
+   .navbar .navbar-nav{ margin-top:11px;}
+   body{ background-color:#f2f2f2;}
+   #main-area{ max-width: 1300px; height: auto; box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff; margin:0px auto; margin-top:15px;}
+   .select2-container--default .select2-selection--single .select2-selection__rendered{ padding:5px;}
+   .select2-container--default .select2-results__option{ height:42px; line-height:30px;}
+   .hidden-sidebar #main-content{     padding: 15px 30px 15px 30px;}
+   #panel-quick-actions{ display: none;}
+   .panel > .table > tbody:first-child > tr:first-child td{border:none; height:42px;}
+   .table-bordered > tbody > tr > td a{ padding-left:20px;}
+   .panel > .table-bordered > tbody > tr > td:first-child{height:42px;}
+   .panel-default > .panel-heading span{ padding-right:5px;}
+   .panel-default > .panel-heading{ height:42px; background-color:#fff; color: #0f68b2; font-size: 15px !important; font-weight: 100 !important; text-transform: uppercase; padding-left:25px;}
+.panel-default > .panel-heading i{ display: none;}
+.label.draft{ background-color: #fff; color: #90a1b5 !important;
+
+
+font-size: 15px;
+
+font-weight: 400;
+
+line-height: 14px;} 
+.table-bordered td.amount{ padding-right:20px;}   
+#panel-recent-invoices table th{ color: #445870;
+
+
+font-size: 15px;
+
+font-weight: 400;
+
+line-height: 14px;}
    
    
    /*New Style*/
