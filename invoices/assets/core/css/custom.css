@@ -195,5 +195,13 @@ font-weight: 400;
 text-transform: uppercase;}
 .container #login form{ border-top: 1px dashed #00a3ff; padding-top:30px;}
 .settingsindex{ min-height:1850px;}
-   
+.dropdown-menu>li>a{height: 42px;
+    line-height: 42px;
+    padding: 0px 10px;}
+.dropdown-menu>li>a:hover{ background-color:#0f68b2; color:#fff;}    
+.dropdown-menu{ padding:0px;}
+
+
+
+ 
    /*New Style*/
