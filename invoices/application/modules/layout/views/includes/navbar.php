@@ -34,7 +34,7 @@
                         <i class="visible-md-inline fa fa-file"></i>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#" class="create-quote"><?php _trans('create_quote'); ?></a></li>
+                        <li><?php echo anchor('quotes/createquote', trans('create_quote')); ?></li>
                         <li><?php echo anchor('quotes/index', trans('view_quotes')); ?></li>
                     </ul>
                 </li>
