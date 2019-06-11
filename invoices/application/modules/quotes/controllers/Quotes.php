@@ -164,6 +164,7 @@ class Quotes extends Admin_Controller
 
         $this->layout->render();
     }
+    //custom quote
     public function createquote()
     {
         

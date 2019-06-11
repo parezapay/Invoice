@@ -33,6 +33,7 @@
                         <span class="hidden-md"><?php _trans('quotes'); ?></span>
                         <i class="visible-md-inline fa fa-file"></i>
                     </a>
+                    
                     <ul class="dropdown-menu">
                         <li><?php echo anchor('quotes/createquote', trans('create_quote')); ?></li>
                         <li><?php echo anchor('quotes/index', trans('view_quotes')); ?></li>

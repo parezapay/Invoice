@@ -1,6 +1,6 @@
 <script>
     $(function () {
-        // Display the create quote modal
+        // Display the create quote 
        // $('#create-quote').modal('show');
 
         $('.simple-select').select2();
