@@ -71,7 +71,7 @@
    .navbar-inverse .navbar-nav > li > a:hover{ color:#fff; background-color:#0f68b2;}
    /*.dropdown-menu > li{ height:42px; line-height:42px;}*/
    .navbar .navbar-nav .fa-caret-down{ display: none;}
-   .navbar .navbar-header .img{ margin: 11px 35px 11px 0px;}
+   .navbar .navbar-header .img{ margin: 18px 35px 11px 10px;}
    .navbar .navbar-nav{ margin-top:11px;}
    body{ background-color:#f2f2f2; }
    #main-area{ max-width: 1300px; height: auto; box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff; margin:0px auto; margin-top:15px;}
@@ -193,13 +193,16 @@ font-size: 15px;
 font-weight: 400;
 
 text-transform: uppercase;}
-.container #login form{ border-top: 1px dashed #00a3ff; padding-top:30px;}
+.container #login form{ border-top: 1px dashed #00a3ff; padding-top:30px; margin-top:25px;}
 .settingsindex{ min-height:1850px;}
 .dropdown-menu>li>a{height: 42px;
     line-height: 42px;
     padding: 0px 10px;}
 .dropdown-menu>li>a:hover{ background-color:#0f68b2; color:#fff;}    
 .dropdown-menu{ padding:0px;}
+.container #login .login-logo{  margin-top:25px;}
+
+
 
 
 
