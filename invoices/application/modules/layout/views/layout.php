@@ -26,7 +26,7 @@
 $this->layout->load_view('layout/includes/navbar');
 ?>
 
-<div id="main-area">
+<div id="main-area" class="<?php echo $this->router->fetch_class().$this->router->fetch_method();?>">
     <?php
     // Display the sidebar if enabled
     if (get_setting('disable_sidebar') != 1) {
