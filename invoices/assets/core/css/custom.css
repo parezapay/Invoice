@@ -1,5 +1,5 @@
 /* =============================================================================
-   InvoicePlane
+   
    Custom Stylesheet
 
    All changes made in this file will override the default styles.
@@ -46,8 +46,8 @@
    .invoice .invoice-properties #invoice_date_due{ border:none;}
    .invoice .invoice-properties .input-group-addon{ border:none;}
    #invoice_form .invoice .btn-group{ }
-   #invoice_form .invoice .btn-group .btn_add_row{ width: auto; height: 42px; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin-right:20px;}
-   #invoice_form .invoice .btn-group .btn_add_product{ width: auto; color: #0f68b2; font-size: 16px; height: 42px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin-right:20px;}
+   #invoice_form .invoice .btn-group .btn_add_row{ width: auto; height: 42px; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin-right:8px; }
+   #invoice_form .invoice .btn-group .btn_add_product{ width: auto; color: #0f68b2; font-size: 16px; height: 42px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin-right:8px;}
    #invoice_form .invoice .btn-group .btn_add_task{ width: auto; height: 42px; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 30px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff;}
    #invoice_form .invoice .panel-default{ border:none; background:none; width:100%;}
    #invoice_form .invoice .panel-default .panel-heading{ border:none; background:none; padding: 0px 15px !important; color: #90a1b5;  font-size: 15px; font-weight: 400;}
@@ -70,10 +70,10 @@
     .navbar-inverse .navbar-nav > li > a{ color: #445870; font-size: 16px; font-weight: 400; line-height: 18px;}
    .navbar-inverse .navbar-nav > li > a:hover{ color:#fff; background-color:#0f68b2;}
    /*.dropdown-menu > li{ height:42px; line-height:42px;}*/
-   .navbar .navbar-nav .fa{ display: none;}
+   .navbar .navbar-nav .fa-caret-down{ display: none;}
    .navbar .navbar-header .img{ margin: 11px 35px 11px 0px;}
    .navbar .navbar-nav{ margin-top:11px;}
-   body{ background-color:#f2f2f2;}
+   body{ background-color:#f2f2f2; }
    #main-area{ max-width: 1300px; height: auto; box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff; margin:0px auto; margin-top:15px;}
    .select2-container--default .select2-selection--single .select2-selection__rendered{ padding:5px;}
    .select2-container--default .select2-results__option{ height:42px; line-height:30px;}
@@ -83,7 +83,7 @@
    .table-bordered > tbody > tr > td a{ padding-left:20px;}
    .panel > .table-bordered > tbody > tr > td:first-child{height:42px;}
    .panel-default > .panel-heading span{ padding-right:5px;}
-   .panel-default > .panel-heading{ height:42px; background-color:#fff; color: #0f68b2; font-size: 15px !important; font-weight: 100 !important; text-transform: uppercase; padding-left:25px;}
+   .panel-default > .panel-heading{ height:42px; background-color:#fff; color: #0f68b2; font-size: 15px !important; font-weight: 100 !important; text-transform: uppercase; /*padding-left:25px;*/}
 .panel-default > .panel-heading i{ display: none;}
 .label.draft{ background-color: #fff; color: #90a1b5 !important;
 
@@ -94,14 +94,105 @@ font-weight: 400;
 
 line-height: 14px;} 
 .table-bordered td.amount{ padding-right:20px;}   
-#panel-recent-invoices table th{ color: #445870;
+
+
+.table-bordered > tbody > tr > td{ border-right:1px solid #fff; }
+.table-bordered > tbody > tr > td.amount { border-right:1px solid #ddd;}
+.table-bordered > tbody > tr > td.clearfix{ border-right:1px solid #ddd;}
+.table-bordered > tbody > tr > td{ }
+.panel > .table-responsive th{ text-align:left; color: #445870; font-size: 15px; font-weight: 400; line-height: 20px;}
+.panel > .table-responsive .table-striped th{ }
+.panel > .table-responsive .table-striped td{ }
+.panel > .table-responsive .table-striped td span{  margin:0px; padding:0px; text-align:left;}
+ #headerbar h1.headerbar-title{ color: #0f68b2;
+font-size: 20px;
+font-weight: 400;
+text-transform: uppercase;
+margin: 20px 0px 30px 0px; line-height:30px;} 
+#headerbar .headerbar-item .btn-group .btn-danger{    min-width: 192px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #0f68b2;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 15px 0px 15px 0px; 
+}
+#headerbar .headerbar-item .btn-group .btn-danger i{ display:none;}
+#headerbar .headerbar-item .btn-group .btn-success{    min-width: 192px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #0f68b2;
+    background-color: #ffffff;
+    margin: 15px 30px 15px 0px;
+    color:#0f68b2;font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;text-transform: uppercase;
+}
+#headerbar .headerbar-item .btn-group .btn-success i{ display:none;}
+#main-content #content .panel-default .panel-body .btn-success  { min-width: 192px;
+    height: 42px;
+    border-radius: 5px;
+    background-color: #0f68b2;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin: 15px 0px 15px 0px;}
+    
+.container #login{ max-width: 600px;
+/*margin: 0px auto;*/
+box-shadow: 0 0 6px #d9d9d9;
+border: 1px solid #dcdcdc;
+background-color: #ffffff;
+border-radius: 0px;
+padding: 30px;}
+   
+.container #login #email { max-width: 500px;
+
+height: 42px;
+
+border-radius: 5px;
+
+border: 1px solid #e0e7ee;
+
+background-color: #ffffff; margin-bottom:25px;}  
+ 
+.container #login #password{ max-width: 500px;
+
+height: 42px;
+
+border-radius: 5px;
+
+border: 1px solid #e0e7ee;
+
+background-color: #ffffff;}  
+.container #login label{display:none;}
+.container #login .btn-primary{ color: #00a3ff; background-color: #fff;
+border-color: #fff;
+
+
+font-size: 18px;
+
+font-weight: 400;
+
+text-transform: uppercase;}
+.container #login .btn-primary .fa-unlock{ display:none;}
+
+.container #login .btn-default{ color: #7d8b9b; border:none;
 
 
 font-size: 15px;
 
 font-weight: 400;
 
-line-height: 14px;}
-   
+text-transform: uppercase;}
+.container #login form{ border-top: 1px dashed #00a3ff; padding-top:30px;}
+.settingsindex{ min-height:1850px;}
    
    /*New Style*/
