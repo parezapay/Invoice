@@ -192,7 +192,7 @@ class Quotes extends Admin_Controller
             ]);
         
         //$this->layout->load_view('quotes/create_quote', $data);
-        $this->layout->buffer('content', 'invoices/createinvoice');
+        $this->layout->buffer('content', 'quotes/createquote');
         $this->layout->render();
     }
     /**

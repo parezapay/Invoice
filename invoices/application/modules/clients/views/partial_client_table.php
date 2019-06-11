@@ -35,7 +35,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="client-create-quote"
+                                <a href="<?php echo site_url('quotes/createquote/' . $client->client_id); ?>" class="client-create-quote"
                                    data-client-id="<?php echo $client->client_id; ?>">
                                     <i class="fa fa-file fa-margin"></i> <?php _trans('create_quote'); ?>
                                 </a>
