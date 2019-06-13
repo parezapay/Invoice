@@ -203,8 +203,9 @@ text-transform: uppercase;}
 .container #login .login-logo{  margin-top:25px;}
 
 
-
-
+#main-area .sidebar{ min-width:175px; }
+#main-area .sidebar ul li a{ font-size: 13px; color: #0f68b2; text-align: left;} 
+#main-area .sidebar ul li a i.fa{ float:left; min-width: 12px; margin-right:10px;}
 
  
    /*New Style*/
