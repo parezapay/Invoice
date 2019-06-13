@@ -1,7 +1,7 @@
 /*Please log all the db changes in this file with date:*/
 
-/* June 03  start */
+/* June 13  start-default theme */
 
---ADD SQL HERE
+UPDATE `parezapa_invoices`.`ip_settings` SET `setting_value` = 'parezapay_blue' WHERE (`setting_id` = '48');
 
-/* June 03  end */
+/* June 13  end */
