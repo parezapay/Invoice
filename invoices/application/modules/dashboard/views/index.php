@@ -1,7 +1,7 @@
 <div id="content">
     <?php echo $this->layout->load_view('layout/alerts'); ?>
 
-    <div class="row <?php if (get_setting('disable_quickactions') == 1) echo 'hidden'; ?>">
+    <div class="row <?php if (get_setting('disable_quickactions') == 1) echo 'hidden'; ?>" >
         <div class="col-xs-12">
 
             <div id="panel-quick-actions" class="panel panel-default quick-actions">
@@ -32,7 +32,40 @@
             </div>
         </div>
     </div>
-
+    <div class="row">
+    	<div class="col-xs-12"> 
+    		<div class="dash-title">Dashboard
+    			<div clas="dash-nav pull-right">ashboard</div>
+    		</div>
+    		
+    		<div class="pull-right"><p>10:14, Wednesday, Jun 12, 2019</p></div>
+    	</div>
+    </div>
+	<div class="row top-marg">
+    	
+		<div class="col-xs-12 col-md-4">
+		 <div class="info-box1">
+		 	<h4>Total Revenue</h4>
+		 	<h2>$ 65,780.00</h2>
+		 	<img alt="logo" src="<?php echo base_url(); ?>/assets/core/img/Group_3.png">
+		 </div>
+		</div>
+		<div class="col-xs-12 col-md-4">
+		 <div class="info-box2">
+		 	<h4>Total Expenses</h4>
+		 	<h2>$ 5,655.00</h2>
+		 	<img alt="logo" src="<?php echo base_url(); ?>/assets/core/img/Group_2.png">
+		 </div>
+		</div>
+		<div class="col-xs-12 col-md-4">
+		 <div class="info-box3">
+		 	<h4>Create</h4>
+		 	<h2></a>New Invoice</h2>
+		 	<img alt="logo" src="<?php echo base_url(); ?>/assets/core/img/Oval_Copy.png">
+		 	<hr>
+		 </div>
+		</div>
+	</div>
     <div class="row">
         <div class="col-xs-12 col-md-6">
 

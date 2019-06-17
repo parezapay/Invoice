@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
-        	<div class="img">
+        	<div class="img" style="display: none;">
 				<img alt="logo" src="<?php echo base_url(); ?>/assets/core/img/Logo1.png"></div>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ip-navbar-collapse">
                 <span class="sr-only">Toggle navigation</span>
@@ -10,7 +10,7 @@
         </div>
 
         <div class="collapse navbar-collapse" id="ip-navbar-collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav" >
                 <li><?php echo anchor('dashboard', trans('dashboard'), 'class="hidden-md"') ?>
                     <?php echo anchor('dashboard', '<i class="fa fa-dashboard"></i>', 'class="visible-md-inline-block"') ?>
                 </li>
