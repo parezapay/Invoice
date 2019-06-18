@@ -1,3 +1,4 @@
+<div class="table-shadow">
 <div class="table-responsive">
     <table class="table table-striped">
         <thead>
@@ -67,4 +68,5 @@
         <?php endforeach; ?>
         </tbody>
     </table>
+</div>
 </div>

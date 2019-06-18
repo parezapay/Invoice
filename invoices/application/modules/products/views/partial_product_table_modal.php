@@ -1,3 +1,4 @@
+<div class="table-shadow">
 <div class="table-responsive">
     <table class="table table-bordered table-striped">
         <tr>
@@ -33,4 +34,5 @@
         <?php } ?>
 
     </table>
+</div>
 </div>

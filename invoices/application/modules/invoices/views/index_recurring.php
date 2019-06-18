@@ -9,6 +9,7 @@
 <div id="content" class="table-content">
 
     <div id="filter_results">
+        <div class="table-shadow">
         <div class="table-responsive">
             <table class="table table-striped">
 
@@ -87,6 +88,7 @@
                 </tbody>
 
             </table>
+        </div>
         </div>
     </div>
 

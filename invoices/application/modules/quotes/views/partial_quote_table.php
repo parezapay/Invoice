@@ -1,3 +1,4 @@
+<div class="table-shadow">
 <div class="table-responsive">
     <table class="table table-striped">
 
@@ -93,4 +94,5 @@
         </tbody>
 
     </table>
+</div>
 </div>

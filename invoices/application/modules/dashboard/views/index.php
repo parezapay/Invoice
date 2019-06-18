@@ -34,10 +34,36 @@
     </div>
     <div class="row">
     	<div class="col-xs-12"> 
-    		<div class="dash-title">Dashboard
-    			<div clas="dash-nav pull-right">ashboard</div>
+    		<div class="col-sm-6">
+    			<div class="dash-title">Dashboard</div>
     		</div>
-    		
+    		<div class="col-sm-6">
+    			<div class="dash-nav pull-right">
+                    <div class="drop">
+
+                        <ul class="drop_menu">
+                        
+                            <li><a href='#'><img alt="settings" src="<?php echo base_url(); ?>/assets/core/img/settings_icon.png"></a>
+                            
+                                <ul>
+                                
+                                    <li><a href='#'>Sub Link 1</a></li>
+                                    
+                                    <li><a href='#'>Sub Link 2</a></li>
+                                
+                                </ul>
+                            
+                            </li>
+                            
+                            <li><a href='#'><img alt="log-out" src="<?php echo base_url(); ?>/assets/core/img/Take_off.png"></a></li>
+                            
+                            <!--  <li><a href='#'><span>Paul</span><img alt="profile" src="<?php echo base_url(); ?>/assets/core/img/profile.png"></a></li>-->
+                        
+                        </ul>
+
+					</div>
+    			</div>
+    		</div>
     		<div class="pull-right"><p>10:14, Wednesday, Jun 12, 2019</p></div>
     	</div>
     </div>
@@ -66,7 +92,55 @@
 		 </div>
 		</div>
 	</div>
-    <div class="row">
+	
+    <div class="row" style="margin-top: 30px; margin-bottom: 15px;">
+        <div class="col-xs-12"> 
+        	<div class="col-sm-4">
+        		<div class="table-shadow">
+        		<div class="card">
+                            <div class="card-body">
+                                <h4 class="mt-0 header-title">Sales Analytics</h4>
+                                <div id="morris-donut-example" class="morris-chart" style="height: 300px"><svg height="300" version="1.1" width="255" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px; top: -0.75px;"><desc>Created with Raphaël 2.2.0</desc><defs></defs><path style="opacity: 1;" fill="none" stroke="#4bbbce" d="M127.5,228.33333333333331A78.33333333333333,78.33333333333333,0,0,0,201.65753572921528,175.23432197783941" stroke-width="2" opacity="1"></path><path style="" fill="#4bbbce" stroke="#ffffff" d="M127.5,231.33333333333331A81.33333333333333,81.33333333333333,0,0,0,204.4976115656533,176.2007428195439L238.73630359382292,187.85148296675914A117.5,117.5,0,0,1,127.5,267.5Z" stroke-width="3"></path><path style="opacity: 0;" fill="none" stroke="#5985ee" d="M201.65753572921528,175.23432197783941A78.33333333333333,78.33333333333333,0,0,0,57.25053215479218,115.34277306857598" stroke-width="2" opacity="0"></path><path style="" fill="#5985ee" stroke="#ffffff" d="M204.4976115656533,176.2007428195439A81.33333333333333,81.33333333333333,0,0,0,54.56012700327358,114.01547501588314L26.60980681805259,100.22632302401868A112.5,112.5,0,0,1,234.00284386642622,186.24078156391832Z" stroke-width="3"></path><path style="opacity: 0;" fill="none" stroke="#46cd93" d="M57.25053215479218,115.34277306857598A78.33333333333333,78.33333333333333,0,0,0,127.4753908579517,228.3333294677383" stroke-width="2" opacity="0"></path><path style="" fill="#46cd93" stroke="#ffffff" d="M54.56012700327358,114.01547501588314A81.33333333333333,81.33333333333333,0,0,0,127.47444838017113,231.33332931969426L127.4646570832285,262.4999944483476A112.5,112.5,0,0,1,26.60980681805259,100.22632302401868Z" stroke-width="3"></path><text style="text-anchor: middle; font-family: &quot;Arial&quot;; font-size: 15px; font-weight: 800;" x="127.5" y="140" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="15px" stroke="none" fill="#000000" font-weight="800" transform="matrix(1.1949,0,0,1.1949,-24.8517,-29.4322)" stroke-width="0.8368794326241136"><tspan dy="6">Download Sales</tspan></text><text style="text-anchor: middle; font-family: &quot;Arial&quot;; font-size: 14px;" x="127.5" y="160" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" transform="matrix(1.3056,0,0,1.3056,-38.9583,-45.8333)" stroke-width="0.7659574468085106"><tspan dy="5">12</tspan></text></svg></div>
+                            </div>
+                        </div>
+                        </div>
+        	</div>
+        	
+        	<div class="col-sm-8">
+        		<div class="table-shadow">
+				<div class="card">
+                            <div class="card-body">
+                                <h4 class="mt-0 header-title">Sales Report</h4>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div id="morris-line-example" class="morris-chart" style="height: 300px; position: relative;"><svg height="300" version="1.1" width="593.333" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.5px; top: -0.75px;"><desc>Created with Raphaël 2.2.0</desc><defs></defs><text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="36.5" y="260" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4.5">0</tspan></text><path style="" fill="none" stroke="#eef0f2" d="M49,260H568.333" stroke-width="0.5"></path><text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="36.5" y="201.25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4.5">25</tspan></text><path style="" fill="none" stroke="#eef0f2" d="M49,201.25H568.333" stroke-width="0.5"></path><text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="36.5" y="142.5" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4.5">50</tspan></text><path style="" fill="none" stroke="#eef0f2" d="M49,142.5H568.333" stroke-width="0.5"></path><text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="36.5" y="83.75" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4.5">75</tspan></text><path style="" fill="none" stroke="#eef0f2" d="M49,83.75H568.333" stroke-width="0.5"></path><text style="text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="36.5" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal"><tspan dy="4.5">100</tspan></text><path style="" fill="none" stroke="#eef0f2" d="M49,25H568.333" stroke-width="0.5"></path><text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="568.333" y="272.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,8.5)"><tspan dy="4.5">2018</tspan></text><text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="481.85647399635036" y="272.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,8.5)"><tspan dy="4.5">2017</tspan></text><text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="395.14302600364965" y="272.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,8.5)"><tspan dy="4.5">2016</tspan></text><text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="308.6665" y="272.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,8.5)"><tspan dy="4.5">2015</tspan></text><text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="222.18997399635037" y="272.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,8.5)"><tspan dy="4.5">2014</tspan></text><text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="135.71344799270074" y="272.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,8.5)"><tspan dy="4.5">2013</tspan></text><text style="text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" x="49" y="272.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" font-weight="normal" transform="matrix(1,0,0,1,0,8.5)"><tspan dy="4.5">2012</tspan></text><path style="" fill="none" stroke="#46cd93" d="M49,107.25C70.67836199817518,89.625,114.03508599452556,29.39620383036936,135.71344799270074,36.75C157.33257949361314,44.08370383036936,200.57084249543797,157.1875,222.18997399635037,166C243.80910549726278,174.8125,287.0473684990876,107.25,308.6665,107.25C330.2856315009124,107.25,373.5238945027372,168.93348153214774,395.14302600364965,166C416.82138800182486,163.05848153214774,460.17811199817515,98.45759233926128,481.85647399635036,83.75C503.4756054972628,69.08259233926128,546.7138684990875,57.3125,568.333,48.5" stroke-width="3"></path><path style="" fill="none" stroke="#5985ee" d="M49,154.25C70.67836199817518,136.625,114.03508599452556,85.22075923392613,135.71344799270074,83.75C157.33257949361314,82.28325923392613,200.57084249543797,148.375,222.18997399635037,142.5C243.80910549726278,136.625,287.0473684990876,36.75,308.6665,36.75C330.2856315009124,36.75,373.5238945027372,133.69955540355676,395.14302600364965,142.5C416.82138800182486,151.32455540355676,460.17811199817515,116.07455540355677,481.85647399635036,107.25C503.4756054972628,98.44955540355677,546.7138684990875,80.8125,568.333,72" stroke-width="3"></path><circle cx="49" cy="107.25" r="4" fill="#46cd93" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="135.71344799270074" cy="36.75" r="4" fill="#46cd93" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="222.18997399635037" cy="166" r="4" fill="#46cd93" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="308.6665" cy="107.25" r="4" fill="#46cd93" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="395.14302600364965" cy="166" r="4" fill="#46cd93" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="481.85647399635036" cy="83.75" r="4" fill="#46cd93" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="568.333" cy="48.5" r="4" fill="#46cd93" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="49" cy="154.25" r="4" fill="#5985ee" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="135.71344799270074" cy="83.75" r="4" fill="#5985ee" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="222.18997399635037" cy="142.5" r="4" fill="#5985ee" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="308.6665" cy="36.75" r="4" fill="#5985ee" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="395.14302600364965" cy="142.5" r="4" fill="#5985ee" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="481.85647399635036" cy="107.25" r="4" fill="#5985ee" stroke="#ffffff" style="" stroke-width="1"></circle><circle cx="568.333" cy="72" r="4" fill="#5985ee" stroke="#ffffff" style="" stroke-width="1"></circle></svg><div class="morris-hover morris-default-style" style="left: 0px; top: 6px; display: none;"><div class="morris-hover-row-label">2012</div><div class="morris-hover-point" style="color: #5985ee">
+  Series A:
+  45
+</div><div class="morris-hover-point" style="color: #46cd93">
+  Series B:
+  65
+</div></div></div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div>
+                                            <h5 class="font-14 mb-5">Yearly Sales Report</h5>
+
+                                            <div>
+                                                <h5 class="mb-3">2018 : $19523</h5>
+                                                <p class="text-muted mb-4">At vero eos et accusamus et iusto odio dignissimos ducimus atque</p>
+                                                <a href="#" class="btn btn-primary btn-sm">Read more <i class="mdi mdi-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+        	</div>
+        </div>
+    </div>
+	
+    <div class="row" style="display: none;">
         <div class="col-xs-12 col-md-6">
 
             <div id="panel-quote-overview" class="panel panel-default overview">
@@ -95,7 +169,7 @@
             </div>
 
         </div>
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 col-md-6" >
 
             <div id="panel-invoice-overview" class="panel panel-default overview">
 
@@ -144,7 +218,7 @@
         </div>
     </div>
 
-    <div class="row">
+    <div class="row" style="display: none;">
         <div class="col-xs-12 col-md-6">
 
             <div id="panel-recent-quotes" class="panel panel-default">
@@ -288,7 +362,7 @@
     </div>
 
     <?php if (get_setting('projects_enabled') == 1) : ?>
-        <div class="row">
+        <div class="row" style="display: none;">
             <div class="col-xs-12 col-md-6">
 
                 <div id="panel-projects" class="panel panel-default">
@@ -376,3 +450,164 @@
     <?php endif; ?>
 
 </div>
+
+<div class="table-shadow">
+<h3>Invoices</h3>
+<div class="table-responsive" >
+    <table class="table table-striped">
+
+        <thead>
+        <tr>
+            <th><?php _trans('Invoice Number'); ?></th>
+            <th><?php _trans('Client Name'); ?></th>
+            <th><?php _trans('Date'); ?></th>
+            <th><?php _trans('Amount'); ?></th>
+            <th><?php _trans('Balance'); ?></th>
+            <th><?php _trans('Due Date'); ?></th>
+            <!--  <th style="text-align: right;"><?php _trans('amount'); ?></th>
+            <th style="text-align: right;"><?php _trans('balance'); ?></th>-->
+            <th><?php _trans('Status'); ?></th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <?php
+        $invoice_idx = 1;
+        $invoice_count = count($invoices);
+        $invoice_list_split = $invoice_count > 3 ? $invoice_count / 2 : 9999;
+        foreach ($invoices as $invoice) {
+            // Disable read-only if not applicable
+            if ($this->config->item('disable_read_only') == true) {
+                $invoice->is_read_only = 0;
+            }
+            // Convert the dropdown menu to a dropup if invoice is after the invoice split
+            $dropup = $invoice_idx > $invoice_list_split ? true : false;
+            ?>
+            <tr >
+                <td>
+                    <span class="label <?php echo $invoice_statuses[$invoice->invoice_status_id]['class']; ?>">
+                        <?php echo $invoice_statuses[$invoice->invoice_status_id]['label'];
+                        if ($invoice->invoice_sign == '-1') { ?>
+                            &nbsp;<i class="fa fa-credit-invoice"
+                                     title="<?php echo trans('credit_invoice') ?>"></i>
+                        <?php }
+                        if ($invoice->is_read_only == 1) { ?>
+                            &nbsp;<i class="fa fa-read-only"
+                                     title="<?php echo trans('read_only') ?>"></i>
+                        <?php }; ?>
+                    </span>
+                </td>
+
+                <td>
+                    <a href="<?php echo site_url('invoices/view/' . $invoice->invoice_id); ?>"
+                       title="<?php _trans('edit'); ?>">
+                        <?php echo($invoice->invoice_number ? $invoice->invoice_number : $invoice->invoice_id); ?>
+                    </a>
+                </td>
+
+                <td>
+                    <?php echo date_from_mysql($invoice->invoice_date_created); ?>
+                </td>
+
+                <td>
+                    <span class="<?php if ($invoice->is_overdue) { ?>font-overdue<?php } ?>">
+                        <?php echo date_from_mysql($invoice->invoice_date_due); ?>
+                    </span>
+                </td>
+
+                <td>
+                    <a href="<?php echo site_url('clients/view/' . $invoice->client_id); ?>"
+                       title="<?php _trans('view_client'); ?>">
+                        <?php _htmlsc(format_client($invoice)); ?>
+                    </a>
+                </td>
+
+                <td class="amount <?php if ($invoice->invoice_sign == '-1') {
+                    echo 'text-danger';
+                }; ?>">
+                    <?php echo format_currency($invoice->invoice_total); ?>
+                </td>
+
+                <td class="amount db-sts" >
+                    <?php echo format_currency($invoice->invoice_balance); ?>
+                </td>
+
+                <td>
+                    <div class="options btn-group<?php echo $dropup ? ' dropup' : ''; ?>">
+                        <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-cog"></i> <?php _trans('options'); ?>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <?php if ($invoice->is_read_only != 1) { ?>
+                                <li>
+                                    <a href="<?php echo site_url('invoices/view/' . $invoice->invoice_id); ?>">
+                                        <i class="fa fa-edit fa-margin"></i> <?php _trans('edit'); ?>
+                                    </a>
+                                </li>
+                            <?php } ?>
+                            <li>
+                                <a href="<?php echo site_url('invoices/generate_pdf/' . $invoice->invoice_id); ?>"
+                                   target="_blank">
+                                    <i class="fa fa-print fa-margin"></i> <?php _trans('download_pdf'); ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo site_url('mailer/invoice/' . $invoice->invoice_id); ?>">
+                                    <i class="fa fa-send fa-margin"></i> <?php _trans('send_email'); ?>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="invoice-add-payment"
+                                   data-invoice-id="<?php echo $invoice->invoice_id; ?>"
+                                   data-invoice-balance="<?php echo $invoice->invoice_balance; ?>"
+                                   data-invoice-payment-method="<?php echo $invoice->payment_method; ?>">
+                                    <i class="fa fa-money fa-margin"></i>
+                                    <?php _trans('enter_payment'); ?>
+                                </a>
+                            </li>
+                            <?php if (
+                                $invoice->invoice_status_id == 1 ||
+                                ($this->config->item('enable_invoice_deletion') === true && $invoice->is_read_only != 1)
+                            ) { ?>
+                                <li>
+                                    <form action="<?php echo site_url('invoices/delete/' . $invoice->invoice_id); ?>"
+                                          method="POST">
+                                        <?php _csrf_field(); ?>
+                                        <button type="submit" class="dropdown-button"
+                                                onclick="return confirm('<?php _trans('delete_invoice_warning'); ?>');">
+                                            <i class="fa fa-trash-o fa-margin"></i> <?php _trans('delete'); ?>
+                                        </button>
+                                    </form>
+                                </li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <?php
+            $invoice_idx++;
+        } ?>
+        </tbody>
+
+    </table>
+</div>
+ <div class="row">
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">
+  	<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a class="active" href="#">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+  </div>
+  <div class="col-sm-4"></div>
+</div> 
+
+
+</div>
+

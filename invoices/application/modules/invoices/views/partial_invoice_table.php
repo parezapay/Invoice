@@ -1,4 +1,5 @@
-<div class="table-responsive">
+<div class="table-shadow">
+<div class="table-responsive" >
     <table class="table table-striped">
 
         <thead>
@@ -135,3 +136,5 @@
 
     </table>
 </div>
+</div>
+
