@@ -1,4 +1,4 @@
-<div class="table-shadow">
+<div class="table-shadow" style="margin-top: 30px;">
 <div class="table-responsive" >
     <table class="table table-striped">
 
@@ -9,8 +9,8 @@
             <th><?php _trans('created'); ?></th>
             <th><?php _trans('due_date'); ?></th>
             <th><?php _trans('client_name'); ?></th>
-            <th style="text-align: right;"><?php _trans('amount'); ?></th>
-            <th style="text-align: right;"><?php _trans('balance'); ?></th>
+            <th style="text-align: left;"><?php _trans('amount'); ?></th>
+            <th style="text-align: left;"><?php _trans('balance'); ?></th>
             <th><?php _trans('options'); ?></th>
         </tr>
         </thead>
@@ -80,7 +80,7 @@
                 <td>
                     <div class="options btn-group<?php echo $dropup ? ' dropup' : ''; ?>">
                         <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-cog"></i> <?php _trans('options'); ?>
+                            <i class="fa "><img alt="option" src="<?php echo base_url(); ?>/assets/core/img/option-button-copy-4.png"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <?php if ($invoice->is_read_only != 1) { ?>

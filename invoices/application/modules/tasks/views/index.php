@@ -1,4 +1,5 @@
-<div id="headerbar">
+<div class="table-shadow" >
+<div id="headerbar" >
     <h1 class="headerbar-title"><?php _trans('tasks'); ?></h1>
 
     <div class="headerbar-item pull-right">
@@ -90,4 +91,5 @@
 
     </div>
 
+</div>
 </div>

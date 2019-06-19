@@ -1,4 +1,4 @@
-<div class="table-shadow">
+<div class="table-shadow" >
 <div class="table-responsive">
     <table id="tasks_table" class="table table-bordered table-striped no-margin">
         <tr>

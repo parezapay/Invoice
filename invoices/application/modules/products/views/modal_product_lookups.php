@@ -110,6 +110,7 @@
     });
 </script>
 
+<div class="table-shadow" >
 <div id="modal-choose-items" class="modal col-xs-12 col-sm-10 col-sm-offset-1"
      role="dialog" aria-labelledby="modal-choose-items" aria-hidden="true">
     <form class="modal-content">
@@ -166,4 +167,5 @@
         </div>
     </form>
 
+</div>
 </div>

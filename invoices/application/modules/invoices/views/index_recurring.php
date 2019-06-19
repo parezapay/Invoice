@@ -1,4 +1,4 @@
-<div id="headerbar">
+<div id="headerbar" >
     <h1 class="headerbar-title"><?php _trans('recurring_invoices'); ?></h1>
 
     <div class="headerbar-item pull-right">
@@ -6,7 +6,9 @@
     </div>
 </div>
 
-<div id="content" class="table-content">
+
+<div class="table-shadow" style="margin-top: 30px;">
+<div id="content" class="table-content" >
 
     <div id="filter_results">
         <div class="table-shadow">
@@ -62,7 +64,7 @@
                             <div class="options btn-group">
                                 <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"
                                    href="#">
-                                    <i class="fa fa-cog"></i> <?php _trans('options'); ?>
+                                    <i class="fa "><img alt="option" src="<?php echo base_url(); ?>/assets/core/img/option-button-copy-4.png"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
@@ -92,4 +94,5 @@
         </div>
     </div>
 
+</div>
 </div>

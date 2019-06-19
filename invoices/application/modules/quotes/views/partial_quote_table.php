@@ -1,4 +1,4 @@
-<div class="table-shadow">
+<div class="table-shadow" style="margin-top: 30px;">
 <div class="table-responsive">
     <table class="table table-striped">
 
@@ -55,7 +55,7 @@
                     <div class="options btn-group<?php echo $dropup ? ' dropup' : ''; ?>">
                         <a class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown"
                            href="#">
-                            <i class="fa fa-cog"></i> <?php _trans('options'); ?>
+                            <i class="fa "><img alt="option" src="<?php echo base_url(); ?>/assets/core/img/option-button-copy-4.png"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <li>

@@ -7,7 +7,7 @@
 
 </div>
 
-<div id="content" class="table-content">
+<!-- <div id="content" class="table-content">
 
     <?php $this->layout->load_view('layout/alerts'); ?>
 
@@ -59,5 +59,79 @@
 
 
     </div>
+
+</div>-->
+
+
+<div class="table-shadow" style="margin-top: 30px;">
+<div class="table-responsive" >
+    <table class="table table-striped">
+
+        
+        
+
+        
+        
+       <table id="customers">
+  <tr class="tr-head">
+    <th>Payment Date</th>
+    <th class="due-date">Invoice</th>
+    <th class="due-date">Payment Date</th>
+    <th>Transaction successful</th>
+    <th>Payment Provider</th>
+    <th>Provider Respons</th>
+    <th>Transaction Reference</th>
+  </tr>
+  
+  <tr>
+    <td>4-13-20190611</td>
+    <td>HelaPay</td>
+    <td>Jun12, 2019</td>
+    <td>$4,579.00</td>
+    <td>$4,579.00</td>
+    <td>Jul 02, 2019</td>
+    <td class="draft"><span>Draft</span></td>
+    
+  </tr>
+  
+  <tr>
+    <td>4-13-20190611</td>
+    <td>OnetwoCo</td>
+    <td>Jun12, 2019</td>
+    <td>$4,579.00</td>
+    <td>$4,579.00</td>
+    <td>Jul 02, 2019</td>
+    <td class="sent"><span>Sent</span></td>
+    
+  </tr>
+  
+  <tr>
+    <td>4-13-20190611</td>
+    <td>Avbee Pvt Ltd</td>
+    <td>Jun12, 2019</td>
+    <td>$4,579.00</td>
+    <td>$4,579.00</td>
+    <td>Jul 02, 2019</td>
+    <td class="paid"><span>Paid</span></td>
+    
+  </tr>
+  
+  <tr>
+    <td>4-13-20190611</td>
+    <td>TopTen System</td>
+    <td>Jun12, 2019</td>
+    <td>$4,579.00</td>
+    <td>$4,579.00</td>
+    <td>Jul 02, 2019</td>
+    <td class="sent"><span>Sent</span></td>
+    
+  </tr>
+  
+</table>
+
+    </table>
+</div>
+
+
 
 </div>

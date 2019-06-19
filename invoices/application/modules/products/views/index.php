@@ -1,3 +1,4 @@
+<div class="table-shadow">
 <div id="headerbar">
     <h1 class="headerbar-title"><?php _trans('products'); ?></h1>
 
@@ -81,4 +82,5 @@
         </table>
     </div>
 
+</div>
 </div>
