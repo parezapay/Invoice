@@ -47,9 +47,16 @@
                             
                                 <ul>
                                 
-                                    <li><a href='#'>Sub Link 1</a></li>
-                                    
-                                    <li><a href='#'>Sub Link 2</a></li>
+                                    <li class="active"><a href='#'>Settings</a></li>
+                                    <li><a href='#'>Custom Fields</a></li>
+                                    <li><a href='#'>Email Templates</a></li>
+                                    <li><a href='#'>Invoice Groups</a></li>
+                                    <li><a href='#'>Invoice Archive</a></li>
+                                    <li><a href='#'>Payment Methods</a></li>
+                                    <li><a href='#'>Tax Rates</a></li>
+                                    <li><a href='#'>User Accounts</a></li>
+                                    <li><a href='#'>System Settings</a></li>
+                                    <li><a href='#'>Import Data</a></li>
                                 
                                 </ul>
                             

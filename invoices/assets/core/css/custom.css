@@ -311,11 +311,17 @@ left:-9999px;
 
 top:-9999px;
 
-list-style-type:none;
+list-style-type:none; z-index: 1000;
+
+  border-radius: 5px;
+
+  border: solid 1px #31414e;
+
+  background-color: #ffffff;
 
 }
 
-.drop_menu li:hover { position:relative; background:#fff; color:#0f68b2 }
+.drop_menu li:hover { position:relative;  color:#0f68b2 }
 
 .drop_menu li:hover ul {
 
@@ -323,7 +329,7 @@ left:0px;
 
 top:30px;
 
-background:#0f68b2;
+/*background:#0f68b2;*/
 
 padding:0px;
 
@@ -341,11 +347,15 @@ width:168px;
 
 text-indent:15px;
 
-background-color:#0f68b2;
+/*background-color:#0f68b2;*/
+color:#31414e;
+height:40px; line-height:40px; font-size:14px;
 
 }
-
-.drop_menu li:hover ul li a:hover { background:#fff; color:#0f68b2;}
+.drop_menu li:hover ul li.active{   background-color: #31414e; }
+.drop_menu li:hover ul li.active a{ color:#fff; line-height:30px; cursor: pointer; font-size:14px; }
+.drop_menu li:hover ul li.active a:hover{ color:#fff; cursor: pointer;}
+.drop_menu li:hover ul li a:hover {  color:#0f68b2;}
 
 /*18 June*/
 
