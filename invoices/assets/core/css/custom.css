@@ -402,7 +402,7 @@ border: none;
 #main-area .sidebar ul li.dropdown:hover ul.dropdown-menu  li a{ color:#fff !important;}
 /*.sidebar ul li.dropdown:hover ul.dropdown-menu  li a:hover{  color:#fff !important; height:45px; line-height:30px; background-color::#000 !important; }*/
 /*#main-area .sidebar ul li a*/
-#main-area .sidebar ul li ul.dropdown-menu  li a{ font-size:15px !important; height:42px !important; margin-bottom:0px; text-align:center !important; line-height:42px !important; }
+#main-area .sidebar ul li ul.dropdown-menu  li a{ font-size:15px !important; height:42px !important; margin-bottom:0px; text-align:center !important; line-height:42px !important; padding-left:35px; }
 
 
 
@@ -440,6 +440,13 @@ border: none;
 
 
 /*22 June*/
+
+.sidebar .dropdown-menu { position: relative; height: 0;}
+
+.sidebar .dropdown-menu.showHeight{
+    display: block !important;
+    height: 50%;
+}
 
 
  
