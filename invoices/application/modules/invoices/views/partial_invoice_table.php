@@ -28,8 +28,8 @@
             // Convert the dropdown menu to a dropup if invoice is after the invoice split
             $dropup = $invoice_idx > $invoice_list_split ? true : false;
             ?>
-            <tr>
-                <td>
+            <tr >
+                <td >
                     <span class="label <?php echo $invoice_statuses[$invoice->invoice_status_id]['class']; ?>">
                         <?php echo $invoice_statuses[$invoice->invoice_status_id]['label'];
                         if ($invoice->invoice_sign == '-1') { ?>

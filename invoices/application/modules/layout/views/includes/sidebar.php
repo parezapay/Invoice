@@ -51,7 +51,7 @@
                     </ul>
         </li>
         <li class="dropdown">
-            <a href="" title="<?php _trans('products'); ?>"
+            <a href="javascript:;" title="<?php _trans('products'); ?>"
                class="tip dropdown-btn" data-placement="right"><?php _trans('products'); ?>
                 <i class="fa"><img alt="logo" src="<?php echo base_url(); ?>/assets/core/img/Icons/Gift.png"></i>
             </a>
@@ -75,11 +75,11 @@
                     </ul>
             </li>
         <?php endif; ?>
-        <li>
+        <!--  <li>
             <a href="<?php echo site_url('settings'); ?>" title="<?php _trans('system_settings'); ?>"
                class="tip" data-placement="right"><?php _trans('settings'); ?>
                 <i class="fa"><img alt="logo" src="<?php echo base_url(); ?>/assets/core/img/Icons/Home.png"></i>
             </a>
-        </li>
+        </li>-->
     </ul>
 </div>

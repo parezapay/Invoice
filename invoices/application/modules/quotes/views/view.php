@@ -151,6 +151,8 @@ $cv = $this->controller->view_data["custom_values"];
 <?php echo $modal_delete_quote; ?>
 <?php echo $modal_add_quote_tax; ?>
 
+
+<div class="table-shadow" style="margin-top: 30px;">
 <div id="headerbar">
     <h1 class="headerbar-title">
         <?php
@@ -425,6 +427,7 @@ $cv = $this->controller->view_data["custom_values"];
                 <?php endif; ?>
             </div>
     </div>
+</div>
 </div>
 
 <?php $this->layout->load_view('upload/dropzone-quote-scripts'); ?>

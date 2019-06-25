@@ -12,7 +12,7 @@
    .panel-title{ color: #0f68b2; font-size: 20px; font-weight: 400; text-transform: uppercase; margin:15px 0px 30px 0px;}
    .modal-footer{ border-top: 1px dashed #00a3ff; padding:0px;}
    .form-group label{ color: #90a1b5; font-size: 15px; font-weight: 400; line-height: 14px;}
-   .select2-container--default .select2-selection--single{ max-width: 600px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #fffff;}
+   .select2-container--default .select2-selection--single{ width: 100%; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #fffff;}
    .input-group{ max-width: 600px; height: 42px; border-radius: 5px;  background-color: #ffffff;}
    .input-group .datepicker{ max-width: 600px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; border-right: none; color: #000000;  font-size: 16px; font-weight: 400; line-height: 18px;}
    .input-group .input-group-addon{ background-color:#fff; border-right: 1px solid #e0e7ee; border-top: 1px solid #e0e7ee; border-bottom: 1px solid #e0e7ee; border-left: none;}
@@ -27,19 +27,26 @@
    
    /*#main-area{ max-width: 1300px; height: auto; margin:0px auto; box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff;*/
    #headerbar h1.headerbar-title{ color: #000000;font-size: 16px;font-weight: 400; line-height: 60px;}
-   #headerbar .headerbar-item .options { min-width: 192px; height: 42px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; margin: 15px 30px 15px 0px;}
-   #headerbar .headerbar-item .options a{ background:none; border:none; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 35px; text-transform: uppercase;}
-   #headerbar .headerbar-item .options .fa-caret-down{ position: absolute; left: 160px; top: 12px;}
-   #headerbar .headerbar-item  #btn_save_invoice{ min-width: 192px; height: 42px; border-radius: 5px; background-color: #0f68b2; border:none; color: #ffffff; font-size: 16px; font-weight: 400; line-height: 35px; text-transform: uppercase; margin: 15px 0px 15px 0px;}
-   #headerbar .headerbar-item  #btn_save_invoice .fa-check{ display: none;}
+   #headerbar .headerbar-item .btn-group { min-width: 192px; height: 42px; border-radius: 5px; /*border: 1px solid #0f68b2;*/ background-color: #ffffff; margin: 15px 30px 15px 0px;}
+   #headerbar .headerbar-item .btn-group a{ background:none; border:none; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 35px; text-transform: uppercase;}
+   #headerbar .headerbar-item .btn-group .fa-caret-down{ position: absolute; left: 160px; top: 12px;}
+   #headerbar .headerbar-item  .btn-success{ min-width: 192px; height: 42px; border-radius: 5px; background-color: #0f68b2; border:none; color: #ffffff; font-size: 16px; font-weight: 400; line-height: 35px; text-transform: uppercase; margin: 15px 0px 15px 0px;}
+   #headerbar .headerbar-item  .btn-success .fa-check{ display: none;}
    #headerbar{ border-bottom: 1px dashed #00a3ff;}
    hr{ border:none; margin:0px;}
    #invoice_form .invoice h3 a{ color: #0f68b2; font-size: 20px; font-weight: 400; text-transform: uppercase;}
    #invoice_form .invoice .client-address{ color: #000000; font-size: 16px; font-weight: 400; line-height: 18px;}
    #invoice_form .invoice .details-box{ border:none;}
+   
+   
+   #quote_form .quote h3 a{ color: #0f68b2; font-size: 20px; font-weight: 400; text-transform: uppercase;}
+    #quote_form .quote .client-address{ color: #000000; font-size: 16px; font-weight: 400; line-height: 18px;}
+   
+   
+   
    .invoice .invoice-properties label{ color: #90a1b5; font-size: 15px; font-weight: 400; line-height: 30px;}
    .invoice .invoice-properties .input-sm{ min-width: 192px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff; }
-   .input-sm + .select2 .select2-selection { min-width: 192px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff; line-height: 30px; color: #000000; font-size: 16px; font-weight: 400;
+   .input-sm + .select2 .select2-selection { min-width: 192px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff; line-height: 30px; color: #000000; font-size: 14px; font-weight: 400;
 }
    .invoice .invoice-properties .input-group{ min-width: 192px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
    .invoice .invoice-properties #invoice_date_created{ border:none;}
@@ -57,14 +64,65 @@
    .select2-container--default .select2-search--dropdown .select2-search__field{ height:42px;}
    
    
-   #invoice_form .invoice .table-responsive .input-group .input-group-addon{ border:none; float:left; color: #90a1b5;  font-size: 15px; font-weight: 400; line-height: 18px; text-transform: uppercase; padding:0px; margin-bottom:10px;}
-   #invoice_form .invoice .table-responsive  #item_table .form-control{ min-width: 175px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
-   #invoice_form .invoice .table-responsive .table-bordered > tbody > tr > td{ border:none;}
-   #invoice_form .invoice .table-responsive .table-bordered{ border:none;}
-   #invoice_form .invoice .table-responsive .table > tbody + tbody{ border:none;}
-   #invoice_form .invoice .table-responsive .table.items td.td-amount{/*width: 150px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;*/ color: #90a1b5; font-size: 15px; font-weight: 600; line-height: 14px;}
-   #invoice_form .invoice .table-responsive{ padding:10px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
-   #invoice_form .invoice .table-responsive .input-group select { }
+   .table-responsive .input-group .input-group-addon{ border:none; float:left; color: #90a1b5;  font-size: 15px; font-weight: 400; line-height: 18px; text-transform: uppercase; padding:0px; margin-bottom:10px;}
+    .table-responsive  #item_table .form-control{ min-width: 175px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
+    .table-responsive .table-bordered > tbody > tr > td{ border:none;}
+    .table-responsive .table-bordered{ border:none;}
+    .table-responsive .table > tbody + tbody{ border:none;}
+    .table-responsive .table.items td.td-amount{/*width: 150px; height: 42px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;*/ color: #90a1b5; font-size: 15px; font-weight: 600; line-height: 14px;}
+    .table-responsive{ padding:10px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
+    .table-responsive .input-group select { }
+   
+   #quote_form .quote .details-box{ border:none; background:none; width:100%;}
+    #quote_form .quote .details-box label {
+    color: #90a1b5;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+#quote_form .quote .details-box .input-sm {
+    min-width: 192px;
+    height: 42px;
+    border-radius: 5px;
+    /*border: 1px solid #e0e7ee;*/
+    background-color: #ffffff;
+}
+#quote_form .quote .details-box .input-group {
+    min-width: 192px;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid #e0e7ee;
+    background-color: #ffffff;
+}
+#quote_form .quote .details-box #quote_date_created {
+    border: none;
+}
+#quote_form .quote .details-box .input-group-addon {
+    border: none;
+}
+#quote_form .quote .table-responsive {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #e0e7ee;
+    background-color: #ffffff; border:1px solid red;
+}
+#quote_form .quote .table-responsive .input-group .input-group-addon {
+    border: none;
+    float: left;
+    color: #90a1b5;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+#quote_form .quote  { border:1px solid red;
+    
+}
+
+
+
    
    
    .navbar { }
@@ -77,11 +135,11 @@
    .navbar .navbar-nav{ margin-top:11px;}
    body{ background-color:#f2f2f2; }
    /*#main-area{ box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff; margin:0px auto; margin-top:15px;}*/
-   .invoicesview, .clientsform, .clientsstatus, .quotesstatus, .quotesview, .invoicesstatus, .recurringindex, .paymentsform, .paymentsindex, .paymentsonline_logs, .productsform, .productsindex, .familiesindex, .unitsindex, .tasksform, .tasksindex, .projectsindex {box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff; margin:0px auto; margin-top:15px;}
+   /*.invoicesview, .clientsform, .clientsstatus, .quotesstatus, .quotesview, .invoicesstatus, .recurringindex, .paymentsform, .paymentsindex, .paymentsonline_logs, .productsform, .productsindex, .familiesindex, .unitsindex, .tasksform, .tasksindex, .projectsindex {box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff; margin:0px auto; margin-top:15px;}*/
    .select2-container--default .select2-selection--single .select2-selection__rendered{ padding:5px;}
    .select2-container--default .select2-results__option{ height:42px; line-height:30px;}
    .hidden-sidebar #main-content{     padding: 15px 30px 15px 30px;}
-   #main-content {position: absolute; top: 45px; left: 345px; max-width: 1100px; border: none;}
+   #main-content {position: absolute; top: 80px; left: 345px; max-width: 1100px; border: none;}
    #panel-quick-actions{ display: none;}
    .panel > .table > tbody:first-child > tr:first-child td{border:none; height:42px;}
    .table-bordered > tbody > tr > td a{ padding-left:20px;}
@@ -237,9 +295,9 @@ text-transform: uppercase;}
 
 
 /*Mobile*/
-@media screen and (max-width: 1800px) and (min-width: 992px) {
+/*@media screen and (max-width: 1800px) and (min-width: 992px) {
   .navbar { display:none;}
-}
+}*/
 
 @media screen and (max-width: 991px) and (min-width: 275px) {
   #main-area .sidebar { display:none;}
@@ -249,7 +307,7 @@ text-transform: uppercase;}
 
 /*18 June*/
 #main-content .table-shadow{ width: 100%; height: auto; box-shadow: 0 0 6px rgba(212, 212, 212, 0.5); border-radius: 10px; background-color: #ffffff; padding:20px;}
-#main-content .table-shadow h3{ color: #31414e; font-size: 16px; font-weight: 400; margin-top:20px; margin-bottom:15px; margin-left:8px;}
+#main-content .table-shadow h3{ color: #31414e; font-size: 16px; font-weight: 400; margin-top:20px; margin-bottom:15px; margin-left:0px;}
 #main-content .table-shadow .table-responsive{ min-height:auto;}
 #main-content .table-shadow .table-responsive .table th { text-align:left; color: #999999;  font-size: 14px; font-weight: 400; line-height: 40px; border:none;}
 #main-content .table-shadow .table-responsive .table tr{ }
@@ -441,12 +499,30 @@ border: none;
 
 /*22 June*/
 
-.sidebar .dropdown-menu { position: relative; height: 0;}
+/**/.sidebar .dropdown-menu { position: relative; height: auto;}
 
 .sidebar .dropdown-menu.showHeight{
     display: block !important;
-    height: 50%;
+    height: auto;
 }
+
+
+
+/*25 June*/
+#ip-navbar-collapse ul.nav{ margin-right: 65px;}
+#ip-navbar-collapse ul.nav li a:hover{  background:none;}
+#ip-navbar-collapse ul.nav li.user-pro{ margin-top:12px;}
+#ip-navbar-collapse ul.nav li.dropdown ul.dropdown-menu{   border-radius: 5px; border: solid 1px #31414e; background-color: #ffffff;}
+#ip-navbar-collapse ul.nav li.dropdown ul.dropdown-menu li a{}
+#ip-navbar-collapse ul.nav li.dropdown ul.dropdown-menu li a:hover{ background-color: #31414e;}
+#main-content .dash-title{ margin-top:20px;}
+
+#main-content .table-shadow .table-responsive .table td span.sent{   border-radius: 21px; border: solid 1px #00a3ff; background:none;  padding: 12px 20px; color: #00a3ff !important; font-size: 16px; text-align:center;}
+#main-content .table-shadow .table-responsive .table td span.draft{   border-radius: 21px; border: solid 1px #808080; background:none;  padding: 12px 20px; color: #808080 !important; font-size: 16px; text-align:center;}
+#main-content .table-shadow .table-responsive .table td span.viewed{   border-radius: 21px; border: solid 1px #faa937; background:none;  padding: 12px 20px; color: #faa937 !important; font-size: 16px; text-align:center;}
+#main-content .table-shadow .table-responsive .table td span.paid{   border-radius: 21px; border: solid 1px #68d817; background:none;  padding: 12px 20px; color: #68d817 !important; font-size: 16px; text-align:center;}
+
+/*25 June*/
 
 
  

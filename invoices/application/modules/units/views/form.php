@@ -1,3 +1,5 @@
+<div class="table-shadow" style="margin-top: 30px;">
+
 <form method="post">
 
     <input type="hidden" name="<?php echo $this->config->item('csrf_token_name'); ?>"
@@ -45,3 +47,4 @@
     </div>
 
 </form>
+</div>

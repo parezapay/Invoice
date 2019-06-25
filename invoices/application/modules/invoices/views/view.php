@@ -191,7 +191,7 @@ if ($this->config->item('disable_read_only') == true) {
     $invoice->is_read_only = 0;
 }
 ?>
-
+<div class="table-shadow" style="margin-top: 30px;">
 <div id="headerbar">
     <h1 class="headerbar-title">
         <?php
@@ -202,9 +202,9 @@ if ($this->config->item('disable_read_only') == true) {
 
     <div class="headerbar-item pull-right <?php if ($invoice->is_read_only != 1 || $invoice->invoice_status_id != 4) { ?>btn-group<?php } ?>">
 
-        <div class="options btn-group btn-group-sm">
+        <div class="options btn-group btn-group-sm" >
             <a class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" href="#">
-                <i class="fa fa-caret-down no-margin"></i> <?php _trans('options'); ?>
+                <i class="fa no-margin"></i> <?php _trans('options'); ?>
             </a>
             <ul class="dropdown-menu">
                 <?php if ($invoice->is_read_only != 1) { ?>
@@ -561,6 +561,7 @@ if ($this->config->item('disable_read_only') == true) {
         </div>
 
     </div>
+</div>
 </div>
 
 <?php $this->layout->load_view('upload/dropzone-invoice-scripts'); ?>

@@ -33,45 +33,15 @@
         </div>
     </div>
     <div class="row">
-    	<div class="col-xs-12"> 
-    		<div class="col-sm-6">
+    	<div class="col-xs-12" style="padding: 0px;"> 
+    		<div class="col-sm-6" style="padding: 0px;">
     			<div class="dash-title">Dashboard</div>
     		</div>
     		<div class="col-sm-6">
-    			<div class="dash-nav pull-right">
-                    <div class="drop">
-
-                        <ul class="drop_menu">
-                        
-                            <li><a href='#'><img alt="settings" src="<?php echo base_url(); ?>/assets/core/img/settings_icon.png"></a>
-                            
-                                <ul>
-                                
-                                    <li class="active"><a href='#'>Settings</a></li>
-                                    <li><a href='#'>Custom Fields</a></li>
-                                    <li><a href='#'>Email Templates</a></li>
-                                    <li><a href='#'>Invoice Groups</a></li>
-                                    <li><a href='#'>Invoice Archive</a></li>
-                                    <li><a href='#'>Payment Methods</a></li>
-                                    <li><a href='#'>Tax Rates</a></li>
-                                    <li><a href='#'>User Accounts</a></li>
-                                    <li><a href='#'>System Settings</a></li>
-                                    <li><a href='#'>Import Data</a></li>
-                                
-                                </ul>
-                            
-                            </li>
-                            
-                            <li><a href='#'><img alt="log-out" src="<?php echo base_url(); ?>/assets/core/img/Take_off.png"></a></li>
-                            
-                           
-                        
-                        </ul>
-                        <div class="top-pro"><a href='#'><span>Paul</span><img alt="profile" src="<?php echo base_url(); ?>/assets/core/img/profile.png"></a></div>
-
-					</div>
-    			</div>
+    			
     		</div>
+    		
+    		
     		<div class="pull-right"><p>10:14, Wednesday, Jun 12, 2019</p></div>
     	</div>
     </div>

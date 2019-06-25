@@ -1,3 +1,5 @@
+<div class="table-shadow" style="margin-top: 30px;">
+
 <div id="headerbar">
     <h1 class="headerbar-title"><?php _trans('families'); ?></h1>
 
@@ -62,4 +64,5 @@
 
         </table>
     </div>
+</div>
 </div>

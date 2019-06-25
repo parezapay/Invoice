@@ -23,8 +23,10 @@
     });
 </script>
 
+
+
 <div id="add-user-client" class="modal modal-lg" role="dialog" aria-labelledby="modal_add_user_client"
-     aria-hidden="true">
+     aria-hidden="true" >
     <form class="modal-content">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
@@ -60,3 +62,4 @@
     </form>
 
 </div>
+

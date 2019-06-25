@@ -42,23 +42,23 @@ foreach ($custom_fields as $custom_field) {
     }
 }
 ?>
-
-<div id="headerbar">
+<div class="table-shadow" style="margin-top: 30px;">
+<div id="headerbar" >
     <h1 class="headerbar-title"><?php _htmlsc(format_client($client)); ?></h1>
 
     <div class="headerbar-item pull-right">
         <div class="btn-group btn-group-sm">
-            <a href="#" class="btn btn-default client-create-quote"
+            <!-- <a href="#" class="btn btn-default client-create-quote"
                data-client-id="<?php echo $client->client_id; ?>">
                 <i class="fa fa-file"></i> <?php _trans('create_quote'); ?>
-            </a>
-            <a href="#" class="btn btn-default client-create-invoice"
+            </a> -->
+            <!--<a href="#" class="btn btn-default client-create-invoice"
                data-client-id="<?php echo $client->client_id; ?>">
                 <i class="fa fa-file-text"></i> <?php _trans('create_invoice'); ?></a>
             <a href="<?php echo site_url('clients/form/' . $client->client_id); ?>"
                class="btn btn-default">
                 <i class="fa fa-edit"></i> <?php _trans('edit'); ?>
-            </a>
+            </a>-->
             <a class="btn btn-danger"
                href="<?php echo site_url('clients/delete/' . $client->client_id); ?>"
                onclick="return confirm('<?php _trans('delete_client_warning'); ?>');">
@@ -364,4 +364,5 @@ foreach ($custom_fields as $custom_field) {
         </div>
     </div>
 
+</div>
 </div>
