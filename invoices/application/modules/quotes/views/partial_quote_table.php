@@ -1,4 +1,4 @@
-<div class="table-shadow" style="margin-top: 30px;">
+
 <div class="table-responsive">
     <table class="table table-striped">
 
@@ -95,4 +95,4 @@
 
     </table>
 </div>
-</div>
+

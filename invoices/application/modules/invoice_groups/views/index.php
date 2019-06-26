@@ -1,3 +1,4 @@
+<div class="table-shadow" style="margin-top: 30px;">
 <div id="headerbar">
     <h1 class="headerbar-title"><?php _trans('invoice_groups'); ?></h1>
 
@@ -39,7 +40,7 @@
                         <div class="options btn-group">
                             <a class="btn btn-default btn-sm dropdown-toggle"
                                data-toggle="dropdown" href="#">
-                                <i class="fa fa-cog"></i> <?php _trans('options'); ?>
+                                <i class="fa "><img alt="option" src="<?php echo base_url(); ?>/assets/core/img/option-button-copy-4.png"></i> <?php _trans(''); ?>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
@@ -67,4 +68,5 @@
         </table>
     </div>
 
+</div>
 </div>

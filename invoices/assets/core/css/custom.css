@@ -27,7 +27,7 @@
    
    /*#main-area{ max-width: 1300px; height: auto; margin:0px auto; box-shadow: 0 0 6px #d9d9d9; border: 1px solid #dcdcdc; background-color: #ffffff;*/
    #headerbar h1.headerbar-title{ color: #000000;font-size: 16px;font-weight: 400; line-height: 60px;}
-   #headerbar .headerbar-item .btn-group { min-width: 192px; height: 42px; border-radius: 5px; /*border: 1px solid #0f68b2;*/ background-color: #ffffff; margin: 15px 30px 15px 0px;}
+   #headerbar .headerbar-item .btn-group { min-width: 192px; height: 42px; border-radius: 5px; /**/border: 1px solid #0f68b2; background-color: #ffffff; margin: 15px 30px 15px 0px;}
    #headerbar .headerbar-item .btn-group a{ background:none; border:none; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 35px; text-transform: uppercase;}
    #headerbar .headerbar-item .btn-group .fa-caret-down{ position: absolute; left: 160px; top: 12px;}
    #headerbar .headerbar-item  .btn-success{ min-width: 192px; height: 42px; border-radius: 5px; background-color: #0f68b2; border:none; color: #ffffff; font-size: 16px; font-weight: 400; line-height: 35px; text-transform: uppercase; margin: 15px 0px 15px 0px;}
@@ -523,6 +523,33 @@ border: none;
 #main-content .table-shadow .table-responsive .table td span.paid{   border-radius: 21px; border: solid 1px #68d817; background:none;  padding: 12px 20px; color: #68d817 !important; font-size: 16px; text-align:center;}
 
 /*25 June*/
+
+
+/*26 June*/
+.navbar-inverse .navbar-nav > .open > a:focus{ background:none;}
+#headerbar .headerbar-item .btn-group a{ border-right:1px solid #0f68b2; padding-bottom:0px;}
+#headerbar .headerbar-item .btn-group a{ font-size:14px;}
+#headerbar .headerbar-item .btn-group{ min-width:auto;}
+
+.payment_methodsform #headerbar .headerbar-item .btn-group{ border:none;}
+.usersform #headerbar .headerbar-item .btn-group{ border:none;}
+.settingsindex #headerbar .headerbar-item .btn-group{ border:none;}
+.invoice_groupsform #headerbar .headerbar-item .btn-group{ border:none;}
+/**/#headerbar .headerbar-item .btn-sm{  margin-top:15px; padding:10px 20px;}
+#headerbar .headerbar-item a.dropdown-toggle{  margin-top:-5px; padding:10px 10px; border:none;}
+#headerbar .headerbar-item .btn-primary i{ display: none;}
+.invoicesarchive #headerbar .headerbar-item #invoice_number{ margin-top:6px; border:1px solid #0f68b2;}
+.invoicesarchive #headerbar .headerbar-item span.input-group-btn button{ background-color:#0f68b2; border:1px solid #0f68b2; color:#fff;}
+.custom_fieldsform #headerbar .headerbar-item .btn-group{ border:none;}
+.email_templatesform #headerbar .headerbar-item .btn-group{ border:none;}
+.tax_ratesform #headerbar .headerbar-item .btn-group{ border:none;}
+.clientsform #headerbar .headerbar-item .btn-group{ border:none;}
+.clientsview #headerbar .headerbar-item .btn-group{ border:none;}
+
+
+
+
+/*26 June*/
 
 
  

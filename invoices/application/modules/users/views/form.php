@@ -35,8 +35,8 @@ $cv = $this->controller->view_data["custom_values"];
 </script>
 
 
-
-<form method="post" >
+<div class="table-shadow" style="margin-top: 30px;">
+<form method="post">
 
     <input type="hidden" name="<?php echo $this->config->item('csrf_token_name'); ?>"
            value="<?php echo $this->security->get_csrf_hash() ?>">
@@ -384,3 +384,4 @@ $cv = $this->controller->view_data["custom_values"];
     </div>
 
 </form>
+</div>

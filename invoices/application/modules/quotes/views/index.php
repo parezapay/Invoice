@@ -1,3 +1,4 @@
+<div class="table-shadow" style="margin-top: 30px;">
 <div id="headerbar">
 
     <h1 class="headerbar-title"><?php _trans('quotes'); ?></h1>
@@ -100,4 +101,5 @@
         <?php $this->layout->load_view('quotes/partial_quote_table', array('quotes' => $quotes)); ?>
     </div>
 
+</div>
 </div>

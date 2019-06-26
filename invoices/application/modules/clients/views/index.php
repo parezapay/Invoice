@@ -1,4 +1,5 @@
 
+<div class="table-shadow" style="margin-top: 30px;">
 <div id="headerbar">
 
     <h1 class="headerbar-title"><?php _trans('clients'); ?></h1>
@@ -71,4 +72,5 @@
         <?php $this->layout->load_view('clients/partial_client_table'); ?>
     </div>
 
+</div>
 </div>

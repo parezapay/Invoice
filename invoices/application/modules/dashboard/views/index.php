@@ -1,4 +1,4 @@
-<div id="content">
+<div id="content" >
     <?php echo $this->layout->load_view('layout/alerts'); ?>
 
     <div class="row <?php if (get_setting('disable_quickactions') == 1) echo 'hidden'; ?>" >
@@ -431,27 +431,25 @@
 
 </div>
 
-<div class="table-shadow">
+<div class="table-shadow" style="margin-top: 30px;">
 <h3>Invoices</h3>
 <div class="table-responsive" >
     <table class="table table-striped">
 
-        <!--  <thead>
+        <thead>
         <tr>
-            <th><?php _trans('Invoice Number'); ?></th>
-            <th><?php _trans('Client Name'); ?></th>
-            <th><?php _trans('Date'); ?></th>
-            <th><?php _trans('Amount'); ?></th>
-            <th><?php _trans('Balance'); ?></th>
-            <th><?php _trans('Due Date'); ?></th>
-              <th style="text-align: right;"><?php _trans('amount'); ?></th>
-            <th style="text-align: right;"><?php _trans('balance'); ?></th>
-            <th><?php _trans('Status'); ?></th>
+            <th><?php _trans('status'); ?></th>
+            <th><?php _trans('invoice'); ?></th>
+            <th><?php _trans('created'); ?></th>
+            <th><?php _trans('due_date'); ?></th>
+            <th><?php _trans('client_name'); ?></th>
+            <th style="text-align: left;"><?php _trans('amount'); ?></th>
+            <th style="text-align: left;"><?php _trans('balance'); ?></th>
+            <th><?php _trans('options'); ?></th>
         </tr>
-        </thead>-->
-        
+        </thead>
 
-        <!-- <tbody>
+        <tbody>
         <?php
         $invoice_idx = 1;
         $invoice_count = count($invoices);
@@ -464,8 +462,8 @@
             // Convert the dropdown menu to a dropup if invoice is after the invoice split
             $dropup = $invoice_idx > $invoice_list_split ? true : false;
             ?>
-            <tr style="border: 1px solid green;">
-                <td>
+            <tr >
+                <td >
                     <span class="label <?php echo $invoice_statuses[$invoice->invoice_status_id]['class']; ?>">
                         <?php echo $invoice_statuses[$invoice->invoice_status_id]['label'];
                         if ($invoice->invoice_sign == '-1') { ?>
@@ -509,15 +507,14 @@
                     <?php echo format_currency($invoice->invoice_total); ?>
                 </td>
 
-                 <td class="amount db-sts" >
+                <td class="amount">
                     <?php echo format_currency($invoice->invoice_balance); ?>
-               </td>
-                    
+                </td>
 
                 <td>
                     <div class="options btn-group<?php echo $dropup ? ' dropup' : ''; ?>">
                         <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-cog"></i> <?php _trans('options'); ?>
+                            <i class="fa "><img alt="option" src="<?php echo base_url(); ?>/assets/core/img/option-button-copy-4.png"></i>
                         </a>
                         <ul class="dropdown-menu">
                             <?php if ($invoice->is_read_only != 1) { ?>
@@ -569,285 +566,9 @@
             <?php
             $invoice_idx++;
         } ?>
-        </tbody>-->
-        
-       <table id="customers">
-  <tr class="tr-head">
-    <th>Invoice Number</th>
-    <th class="due-date">Client Name</th>
-    <th class="due-date">Date</th>
-    <th>Amount</th>
-    <th>Balance</th>
-    <th class="due-date">Due Date</th>
-    <th>Status</th>
-    <th>Options</th>
-  </tr>
-  
-  <tr>
-    <td>4-13-20190611</td>
-    <td>HelaPay</td>
-    <td>Jun12, 2019</td>
-    <td>$4,579.00</td>
-    <td>$4,579.00</td>
-    <td>Jul 02, 2019</td>
-    <td class="draft"><span>Draft</span></td>
-    <td>
-    	<div class="options btn-group<?php echo $dropup ? ' dropup' : ''; ?>">
-                        <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa "><img alt="option" src="<?php echo base_url(); ?>/assets/core/img/option-button-copy-4.png"></i> 
-                        </a>
-                        <ul class="dropdown-menu">
-                            <?php if ($invoice->is_read_only != 1) { ?>
-                                <li>
-                                    <a href="<?php echo site_url('invoices/view/' . $invoice->invoice_id); ?>">
-                                        <i class="fa fa-edit fa-margin"></i> <?php _trans('edit'); ?>
-                                    </a>
-                                </li>
-                            <?php } ?>
-                            <li>
-                                <a href="<?php echo site_url('invoices/generate_pdf/' . $invoice->invoice_id); ?>"
-                                   target="_blank">
-                                    <i class="fa fa-print fa-margin"></i> <?php _trans('download_pdf'); ?>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('mailer/invoice/' . $invoice->invoice_id); ?>">
-                                    <i class="fa fa-send fa-margin"></i> <?php _trans('send_email'); ?>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="invoice-add-payment"
-                                   data-invoice-id="<?php echo $invoice->invoice_id; ?>"
-                                   data-invoice-balance="<?php echo $invoice->invoice_balance; ?>"
-                                   data-invoice-payment-method="<?php echo $invoice->payment_method; ?>">
-                                    <i class="fa fa-money fa-margin"></i>
-                                    <?php _trans('enter_payment'); ?>
-                                </a>
-                            </li>
-                            <?php if (
-                                $invoice->invoice_status_id == 1 ||
-                                ($this->config->item('enable_invoice_deletion') === true && $invoice->is_read_only != 1)
-                            ) { ?>
-                                <li>
-                                    <form action="<?php echo site_url('invoices/delete/' . $invoice->invoice_id); ?>"
-                                          method="POST">
-                                        <?php _csrf_field(); ?>
-                                        <button type="submit" class="dropdown-button"
-                                                onclick="return confirm('<?php _trans('delete_invoice_warning'); ?>');">
-                                            <i class="fa fa-trash-o fa-margin"></i> <?php _trans('delete'); ?>
-                                        </button>
-                                    </form>
-                                </li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>4-13-20190611</td>
-    <td>OnetwoCo</td>
-    <td>Jun12, 2019</td>
-    <td>$4,579.00</td>
-    <td>$4,579.00</td>
-    <td>Jul 02, 2019</td>
-    <td class="sent"><span>Sent</span></td>
-    <td>
-    	<div class="options btn-group<?php echo $dropup ? ' dropup' : ''; ?>">
-                        <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa "><img alt="option" src="<?php echo base_url(); ?>/assets/core/img/option-button-copy-4.png"></i> 
-                        </a>
-                        <ul class="dropdown-menu">
-                            <?php if ($invoice->is_read_only != 1) { ?>
-                                <li>
-                                    <a href="<?php echo site_url('invoices/view/' . $invoice->invoice_id); ?>">
-                                        <i class="fa fa-edit fa-margin"></i> <?php _trans('edit'); ?>
-                                    </a>
-                                </li>
-                            <?php } ?>
-                            <li>
-                                <a href="<?php echo site_url('invoices/generate_pdf/' . $invoice->invoice_id); ?>"
-                                   target="_blank">
-                                    <i class="fa fa-print fa-margin"></i> <?php _trans('download_pdf'); ?>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('mailer/invoice/' . $invoice->invoice_id); ?>">
-                                    <i class="fa fa-send fa-margin"></i> <?php _trans('send_email'); ?>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="invoice-add-payment"
-                                   data-invoice-id="<?php echo $invoice->invoice_id; ?>"
-                                   data-invoice-balance="<?php echo $invoice->invoice_balance; ?>"
-                                   data-invoice-payment-method="<?php echo $invoice->payment_method; ?>">
-                                    <i class="fa fa-money fa-margin"></i>
-                                    <?php _trans('enter_payment'); ?>
-                                </a>
-                            </li>
-                            <?php if (
-                                $invoice->invoice_status_id == 1 ||
-                                ($this->config->item('enable_invoice_deletion') === true && $invoice->is_read_only != 1)
-                            ) { ?>
-                                <li>
-                                    <form action="<?php echo site_url('invoices/delete/' . $invoice->invoice_id); ?>"
-                                          method="POST">
-                                        <?php _csrf_field(); ?>
-                                        <button type="submit" class="dropdown-button"
-                                                onclick="return confirm('<?php _trans('delete_invoice_warning'); ?>');">
-                                            <i class="fa fa-trash-o fa-margin"></i> <?php _trans('delete'); ?>
-                                        </button>
-                                    </form>
-                                </li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>4-13-20190611</td>
-    <td>Avbee Pvt Ltd</td>
-    <td>Jun12, 2019</td>
-    <td>$4,579.00</td>
-    <td>$4,579.00</td>
-    <td>Jul 02, 2019</td>
-    <td class="paid"><span>Paid</span></td>
-    <td>
-    	<div class="options btn-group<?php echo $dropup ? ' dropup' : ''; ?>">
-                        <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa "><img alt="option" src="<?php echo base_url(); ?>/assets/core/img/option-button-copy-4.png"></i> 
-                        </a>
-                        <ul class="dropdown-menu">
-                            <?php if ($invoice->is_read_only != 1) { ?>
-                                <li>
-                                    <a href="<?php echo site_url('invoices/view/' . $invoice->invoice_id); ?>">
-                                        <i class="fa fa-edit fa-margin"></i> <?php _trans('edit'); ?>
-                                    </a>
-                                </li>
-                            <?php } ?>
-                            <li>
-                                <a href="<?php echo site_url('invoices/generate_pdf/' . $invoice->invoice_id); ?>"
-                                   target="_blank">
-                                    <i class="fa fa-print fa-margin"></i> <?php _trans('download_pdf'); ?>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('mailer/invoice/' . $invoice->invoice_id); ?>">
-                                    <i class="fa fa-send fa-margin"></i> <?php _trans('send_email'); ?>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="invoice-add-payment"
-                                   data-invoice-id="<?php echo $invoice->invoice_id; ?>"
-                                   data-invoice-balance="<?php echo $invoice->invoice_balance; ?>"
-                                   data-invoice-payment-method="<?php echo $invoice->payment_method; ?>">
-                                    <i class="fa fa-money fa-margin"></i>
-                                    <?php _trans('enter_payment'); ?>
-                                </a>
-                            </li>
-                            <?php if (
-                                $invoice->invoice_status_id == 1 ||
-                                ($this->config->item('enable_invoice_deletion') === true && $invoice->is_read_only != 1)
-                            ) { ?>
-                                <li>
-                                    <form action="<?php echo site_url('invoices/delete/' . $invoice->invoice_id); ?>"
-                                          method="POST">
-                                        <?php _csrf_field(); ?>
-                                        <button type="submit" class="dropdown-button"
-                                                onclick="return confirm('<?php _trans('delete_invoice_warning'); ?>');">
-                                            <i class="fa fa-trash-o fa-margin"></i> <?php _trans('delete'); ?>
-                                        </button>
-                                    </form>
-                                </li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-    </td>
-  </tr>
-  
-  <tr>
-    <td>4-13-20190611</td>
-    <td>TopTen System</td>
-    <td>Jun12, 2019</td>
-    <td>$4,579.00</td>
-    <td>$4,579.00</td>
-    <td>Jul 02, 2019</td>
-    <td class="sent"><span>Sent</span></td>
-    <td>
-    	<div class="options btn-group<?php echo $dropup ? ' dropup' : ''; ?>">
-                        <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa "><img alt="option" src="<?php echo base_url(); ?>/assets/core/img/option-button-copy-4.png"></i> 
-                        </a>
-                        <ul class="dropdown-menu">
-                            <?php if ($invoice->is_read_only != 1) { ?>
-                                <li>
-                                    <a href="<?php echo site_url('invoices/view/' . $invoice->invoice_id); ?>">
-                                        <i class="fa fa-edit fa-margin"></i> <?php _trans('edit'); ?>
-                                    </a>
-                                </li>
-                            <?php } ?>
-                            <li>
-                                <a href="<?php echo site_url('invoices/generate_pdf/' . $invoice->invoice_id); ?>"
-                                   target="_blank">
-                                    <i class="fa fa-print fa-margin"></i> <?php _trans('download_pdf'); ?>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="<?php echo site_url('mailer/invoice/' . $invoice->invoice_id); ?>">
-                                    <i class="fa fa-send fa-margin"></i> <?php _trans('send_email'); ?>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="invoice-add-payment"
-                                   data-invoice-id="<?php echo $invoice->invoice_id; ?>"
-                                   data-invoice-balance="<?php echo $invoice->invoice_balance; ?>"
-                                   data-invoice-payment-method="<?php echo $invoice->payment_method; ?>">
-                                    <i class="fa fa-money fa-margin"></i>
-                                    <?php _trans('enter_payment'); ?>
-                                </a>
-                            </li>
-                            <?php if (
-                                $invoice->invoice_status_id == 1 ||
-                                ($this->config->item('enable_invoice_deletion') === true && $invoice->is_read_only != 1)
-                            ) { ?>
-                                <li>
-                                    <form action="<?php echo site_url('invoices/delete/' . $invoice->invoice_id); ?>"
-                                          method="POST">
-                                        <?php _csrf_field(); ?>
-                                        <button type="submit" class="dropdown-button"
-                                                onclick="return confirm('<?php _trans('delete_invoice_warning'); ?>');">
-                                            <i class="fa fa-trash-o fa-margin"></i> <?php _trans('delete'); ?>
-                                        </button>
-                                    </form>
-                                </li>
-                            <?php } ?>
-                        </ul>
-                    </div>
-    </td>
-  </tr>
-  
-</table>
+        </tbody>
 
     </table>
 </div>
- <!--  <div class="row">
-  <div class="col-sm-4"></div>
-  <div class="col-sm-4">
-  	<div class="pagination">
-  <a href="#">&laquo;</a>
-  <a href="#">1</a>
-  <a class="active" href="#">2</a>
-  <a href="#">3</a>
-  <a href="#">4</a>
-  <a href="#">5</a>
-  <a href="#">6</a>
-  <a href="#">&raquo;</a>
-</div>
-  </div>
-  <div class="col-sm-4"></div>
-</div> -->
-
-
 </div>
 
