@@ -20,6 +20,7 @@
     });
 </script>
 
+<div class="table-shadow" style="margin-top: 30px;">
 <form method="post" action="<?php echo site_url('mailer/send_quote/' . $quote->quote_id) ?>">
 
     <input type="hidden" name="<?php echo $this->config->item('csrf_token_name'); ?>"
@@ -208,5 +209,6 @@
     </div>
 
 </form>
+</div>
 
 <?php $this->layout->load_view('upload/dropzone-quote-scripts'); ?>

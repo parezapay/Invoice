@@ -117,7 +117,7 @@
     padding: 0px;
     margin-bottom: 10px;
 }
-#quote_form .quote  { border:1px solid red;
+/*#quote_form .quote  { border:1px solid red;*/
     
 }
 
@@ -538,7 +538,7 @@ border: none;
 /**/#headerbar .headerbar-item .btn-sm{  margin-top:15px; padding:10px 20px;}
 #headerbar .headerbar-item a.dropdown-toggle{  margin-top:-5px; padding:10px 10px; border:none;}
 #headerbar .headerbar-item .btn-primary i{ display: none;}
-.invoicesarchive #headerbar .headerbar-item #invoice_number{ margin-top:6px; border:1px solid #0f68b2;}
+.invoicesarchive #headerbar .headerbar-item #invoice_number{ margin-top:15px; border:1px solid #0f68b2; height:40px;}
 .invoicesarchive #headerbar .headerbar-item span.input-group-btn button{ background-color:#0f68b2; border:1px solid #0f68b2; color:#fff;}
 .custom_fieldsform #headerbar .headerbar-item .btn-group{ border:none;}
 .email_templatesform #headerbar .headerbar-item .btn-group{ border:none;}
@@ -546,10 +546,34 @@ border: none;
 .clientsform #headerbar .headerbar-item .btn-group{ border:none;}
 .clientsview #headerbar .headerbar-item .btn-group{ border:none;}
 
-
-
-
 /*26 June*/
+
+
+/*27 June*/
+.clientsview .input-group .input-group-addon{ background-color:#0f68b2; color:#fff; border:1px solid #0f68b2;}
+.clientsview .panel-default > .panel-heading{ border:none; }
+.clientsview .panel-default{ margin-top:15px;}
+.clientsview table.table-bordered{ margin-bottom:15px !important;}
+.clientsview table.table-bordered > tbody{ border-radius: 5px;}
+.clientsview table.table-bordered > tbody > tr > td{ border-right: 1px solid #ddd;}
+.clientsview table.table-bordered > tbody > tr > th{ border-right-color: rgb(221, 221, 221);}
+/*.invoicesview i.fa{display: none;}*/
+#quote_form .quote .btn-group{ }
+.quotesview #quote_form .btn-group .btn_add_row, .btn_add_product{ width: auto;
+height: 42px;
+color: #0f68b2;
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+border-radius: 5px;
+border: 1px solid #0f68b2;
+background-color: #ffffff;
+margin-right: 8px;}
+
+
+
+
+/*27 June*/
 
 
  

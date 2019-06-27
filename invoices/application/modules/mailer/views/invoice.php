@@ -20,6 +20,7 @@
     });
 </script>
 
+<div class="table-shadow" style="margin-top: 30px;">
 <form method="post" action="<?php echo site_url('mailer/send_invoice/' . $invoice->invoice_id) ?>">
     <input type="hidden" name="<?php echo $this->config->item('csrf_token_name'); ?>"
            value="<?php echo $this->security->get_csrf_hash() ?>">
@@ -205,5 +206,6 @@
     </div>
 
 </form>
+</div>
 
 <?php $this->layout->load_view('upload/dropzone-invoice-scripts'); ?>
