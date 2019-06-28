@@ -569,11 +569,56 @@ border-radius: 5px;
 border: 1px solid #0f68b2;
 background-color: #ffffff;
 margin-right: 8px;}
-
-
-
-
 /*27 June*/
+
+/*28 June*/
+.invoicesview #headerbar .headerbar-item a.dropdown-toggle{ width: 192px;}
+.invoicesview #headerbar .headerbar-item a.dropdown-toggle .fa{ min-width:0px;}
+.invoicesview #headerbar .headerbar-item .btn-success{ padding: 5px 0px;}
+.invoicesview .table-bordered>tbody>tr>td{ }
+.invoicesview .invoice .invoice-properties #invoice_date_created{ font-size:14px; color: #555;}
+.invoicesview .invoice .invoice-properties #invoice_date_due{ font-size:14px; color: #555;}
+.invoicesview #invoice_form .invoice .btn-group .btn_add_row,#invoice_form .invoice .btn-group .btn_add_product,#invoice_form .invoice .btn-group .btn_add_task{ font-size:15px;}
+.invoicesview #headerbar .headerbar-item .btn-group ul.dropdown-menu li a{ border-right:none; height: 42px; line-height: 50px; padding: 0px 10px; color: #333; padding:0px 16px;}
+.invoicesview #headerbar .headerbar-item .btn-group ul.dropdown-menu li a:hover{ background-color:#333; color:#fff;}
+.quotescreatequote .modal-body .input-group .form-control:first-child{ font-size:14px; color: #555;}
+.quotesview #quote_form .quote .details-box #quote_date_created{ font-size:14px; color: #555;}
+.quotesview #quote_form .quote .details-box .input-sm{ font-size:14px; color: #555;}
+.quotesview #quote_form .panel-default > .panel-heading{ border: none; background: none; padding: 0px 15px !important; color: #90a1b5; font-size: 15px; font-weight: 400;}
+.quotesview #quote_form .panel-default{ border:none;}
+.quotesview #quote_form .panel-default .panel-body .form-control { max-width: 636px; height: 126px; border-radius: 5px; border: 1px solid #e0e7ee; background-color: #ffffff;}
+.quotesview #quote_form .panel-default .panel-body .fileinput-button{ width: 192px; height: 42px; border-radius: 5px; border: 1px solid #0f68b2; background-color: #ffffff; color: #0f68b2; font-size: 16px; font-weight: 400; line-height: 18px;}
+.quotesview #headerbar .headerbar-item .btn-group ul.dropdown-menu{ border:1px solid #333; background-color:#fff;}
+.quotesview #headerbar .headerbar-item .btn-group ul.dropdown-menu li a{ border-right:none; height: 42px; line-height: 50px; padding: 0px 10px; color: #333; padding:0px 16px;}
+.quotesview #headerbar .headerbar-item .btn-group ul.dropdown-menu li a:hover{ background-color:#333; color:#fff;}
+.quotesview #headerbar .headerbar-item a.dropdown-toggle{ width: 192px;}
+.paymentsform #headerbar .headerbar-item .btn-group{ border:none;}
+.productsform #headerbar .headerbar-item .btn-group{ border:none;}
+.unitsform #headerbar .headerbar-item .btn-group{ border:none;}
+.tasksform #headerbar .headerbar-item .btn-group{ border:none;}
+.tasksform .table-shadow #content .panel-default{ border:none;}
+.tasksform .table-shadow #content .panel-default>.panel-heading{ border:none;}
+.tasksform .table-shadow #content .panel-default > .panel-heading {
+    height: 42px;
+    background-color: #fff;
+    color: #90a1b5;
+    font-size: 15px !important;
+    font-weight: 100 !important;
+    text-transform: uppercase;
+    /* padding-left: 25px; */
+}
+.tasksform .table-shadow #content .panel-body .input-group .form-control:first-child{ height:42px; color:#555; font-size:14px;}
+.projectsform .table-shadow #headerbar .headerbar-item .btn-group { border:none;}
+
+
+
+
+
+
+
+
+
+/*28 June*/
 
 
  
