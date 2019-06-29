@@ -499,7 +499,7 @@ border: none;
 
 /*22 June*/
 
-/**/.sidebar .dropdown-menu { position: relative; height: auto;}
+/*.sidebar .dropdown-menu { position: relative; height: auto;}*/
 
 .sidebar .dropdown-menu.showHeight{
     display: block !important;
