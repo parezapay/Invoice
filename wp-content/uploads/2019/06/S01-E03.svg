@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="61px" viewBox="0 0 91 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>S01 E03</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="78.6396446%" y1="34.2071229%" x2="0.707717934%" y2="70.2915521%" id="linearGradient-1">
+            <stop stop-color="#BCD5FF" offset="0%"></stop>
+            <stop stop-color="#A3BEFF" offset="15.1%"></stop>
+            <stop stop-color="#82A0FF" offset="38.66%"></stop>
+            <stop stop-color="#6A8AFF" offset="61.24%"></stop>
+            <stop stop-color="#5C7DFF" offset="82.21%"></stop>
+            <stop stop-color="#5778FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="93.3584031%" y1="50.5553909%" x2="-24.7711403%" y2="49.0428928%" id="linearGradient-2">
+            <stop stop-color="#C0D6FF" offset="0%"></stop>
+            <stop stop-color="#C5DBFF" offset="29.78%"></stop>
+            <stop stop-color="#D3E9FF" offset="64.88%"></stop>
+            <stop stop-color="#E9FFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="S01-E03" fill-rule="nonzero">
+            <g id="Group">
+                <path d="M90.86,34.98 L90.86,26.65 L77.29,26.66 L47.18,9.27 C46.44,8.84 45.15,8.9 44.3,9.39 L14.32,26.7 L0.81,26.71 L0.81,35.06 L0.82,35.06 C0.83,35.32 0.99,35.57 1.31,35.75 L44.51,60.69 C45.25,61.12 46.54,61.06 47.39,60.57 L90.17,35.87 C90.61,35.62 90.84,35.3 90.86,34.98 Z" id="Path" fill="url(#linearGradient-1)"></path>
+                <path d="M44.5,52.36 L1.3,27.42 C0.56,26.99 0.65,26.25 1.51,25.76 L44.29,1.06 C45.14,0.57 46.43,0.51 47.17,0.94 L90.37,25.88 C91.11,26.31 91.02,27.05 90.16,27.54 L47.38,52.24 C46.53,52.74 45.24,52.79 44.5,52.36 Z" id="Path" fill="url(#linearGradient-2)"></path>
+                <path d="M44.65,49.44 L6.36,27.33 C5.71,26.95 5.79,26.29 6.54,25.85 L44.46,3.96 C45.22,3.52 46.36,3.48 47.02,3.85 L85.31,25.96 C85.96,26.34 85.88,27 85.13,27.44 L47.21,49.33 C46.45,49.77 45.31,49.82 44.65,49.44 Z" id="Path" fill="#242993"></path>
+                <path d="M44.75,47.59 L9.57,27.28 C8.97,26.93 9.04,26.33 9.74,25.92 L44.58,5.81 C45.27,5.41 46.33,5.37 46.93,5.71 L82.11,26.02 C82.71,26.37 82.64,26.97 81.94,27.38 L47.1,47.49 C46.4,47.89 45.35,47.94 44.75,47.59 Z" id="Path" fill="#4553C7"></path>
+            </g>
+            <g id="Group" transform="translate(39.000000, 21.000000)" fill="#00A3FF">
+                <polygon id="Path" points="6.03 4.33 1.92 1.95 4.16 0.66 8.28 3.03"></polygon>
+                <polygon id="Path" points="13.68 3.99 9.56 6.37 7.32 5.07 11.43 2.7"></polygon>
+                <polygon id="Path" points="5.1 4.87 2.85 6.17 0.6 4.87 2.85 3.57"></polygon>
+                <polygon id="Path" points="12.86 9.35 10.61 10.65 4.14 6.91 6.38 5.61"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

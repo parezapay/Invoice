@@ -5,7 +5,7 @@
 # Set your URL without trailing slash here, e.g. http://your-domain.com
 # If you use a subdomain, use http://subdomain.your-domain.com
 # If you use a subfolder, use http://your-domain.com/subfolder
-IP_URL=http://localhost/parezapay/invoices
+IP_URL=http://www.parezapay.com/invoices
 
 # Having problems? Enable debug by changing the value to 'true' to enable advanced logging
 ENABLE_DEBUG=false
@@ -19,8 +19,8 @@ REMOVE_INDEXPHP=false
 
 # These database settings are set during the initial setup
 DB_HOSTNAME=localhost
-DB_USERNAME=root
-DB_PASSWORD=password
+DB_USERNAME=parezapa_dbuser
+DB_PASSWORD=DT{jwLqAS;l.
 DB_DATABASE=parezapa_invoices
 DB_PORT=3306
 
