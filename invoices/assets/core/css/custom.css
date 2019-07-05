@@ -265,9 +265,9 @@ text-transform: uppercase;}
 .container #login .login-logo{  margin-top:25px;}
 
 
-#main-area .sidebar{ min-width:255px; min-height: 1214px; background-image: linear-gradient(180deg, #0f68b2 0%, #002b4e 100%); position: absolute; top: 0; left: 0;}
+#main-area .sidebar{ min-width:255px; min-height: 2000px; background-image: linear-gradient(180deg, #0f68b2 0%, #002b4e 100%); position: absolute; top: 0; left: 0;}
 #main-area .sidebar img{ width: 184px; height: 27px; margin-top:60px; margin-left:35px; margin-bottom:65px;}
-#main-area .sidebar ul li a{ width: 213px; height: 59px; font-size: 20px; color: #ffffff; text-align: left; border:none; margin-left:42px; /*margin-bottom:15px;*/ line-height:32px;} 
+#main-area .sidebar ul li a{ width: 213px; height: 59px; font-size: 20px; color: #ffffff; text-align: left; border:none; margin-left:42px; /*margin-bottom:15px;*/ line-height:32px; cursor: pointer;} 
 #main-area .sidebar ul li a i.fa img{  width: 22px; height:22px; margin-right:20px; margin-top:4px; margin-left:20px; margin-bottom:0px;}
 /**/#main-area .sidebar ul li a i.fa{float: left;}
 #main-area .sidebar ul li a:hover{ width: 213px; height: 59px; border-radius: 58px 0 0 58px; background-image: linear-gradient(to right, #00a3ff 0%, #0f68b2 100%);}
@@ -618,6 +618,38 @@ margin-right: 8px;}
 #main-area .sidebar ul li.dropdown ul.dropdown-menu li a{ margin-bottom: 0px;}
 #main-area .sidebar ul li{ margin-bottom:15px; }
 /*2 Jul*/
+
+
+/*Jul 05*/
+    
+#main-content .table-shadow .table-responsive .table td span.canceled {
+    border-radius: 21px;
+    border: solid 1px #4d4c4c;
+    background: none;
+    padding: 12px 20px;
+    color: #4d4c4c !important;
+    font-size: 16px;
+    text-align: center;
+}
+#main-content .table-shadow .table-responsive .table td span.rejected {
+    border-radius: 21px;
+    border: solid 1px #c76e6d;
+    background: none;
+    padding: 12px 20px;
+    color: #c76e6d !important;
+    font-size: 16px;
+    text-align: center;
+}
+#main-content .table-shadow .table-responsive .table td span.approved {
+    border-radius: 21px;
+    border: solid 1px #58a959;
+    background: none;
+    padding: 12px 20px;
+    color: #58a959 !important;
+    font-size: 16px;
+    text-align: center;
+}
+/*Jul 05*/
 
 
  
