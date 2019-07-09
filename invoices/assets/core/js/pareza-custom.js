@@ -1,4 +1,5 @@
 /* Parezapay custom js*/
+
 //var dropdown = document.getElementsByClassName("dropdown-btn");
 //var i;
 //
@@ -20,7 +21,7 @@
 	  //$(this).parent().find('.dropdown-menu').toggleClass('showHeight');
   //});
 //});
-	 
+
 	  $("#accordion > li > div").click(function(){
 
 			if(false == $(this).next().is(':visible')) {
