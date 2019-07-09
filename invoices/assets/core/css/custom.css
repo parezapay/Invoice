@@ -321,13 +321,15 @@ text-transform: uppercase;}
 
 @media screen and (max-width: 991px) and (min-width: 275px) {
   #main-area .sidebar { display:none !important;}
-  .navbar .navbar-toggle{ border-color: #fff;}
+  .navbar .navbar-toggle{ border-color: #1e73b8; color:#1e73b8;}
+  .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{ background-color: #1e73b8;}
   .navbar .navbar-collapse{ border-radius: 5px;
     border: solid 1px #31414e;
     background-color: #ffffff;}
   #main-content{ z-index: -1;}
   .navbar .navbar-collapse ul.navbar-nav li:hover{ background-color: #31414e;}
   .navbar .navbar-collapse ul.navbar-nav li i{ display:none;}
+  .navbar-inverse .navbar-nav .open .dropdown-menu>li>a{ color:#1e73b8; line-height: 30px;}
 }
 /*Mobile*/
 
