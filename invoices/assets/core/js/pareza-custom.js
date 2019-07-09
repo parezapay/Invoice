@@ -24,9 +24,13 @@
 	  $("#accordion > li > div").click(function(){
 
 			if(false == $(this).next().is(':visible')) {
-				$('#accordion ul').slideUp(900);
+				$('#accordion ul').slideUp(100);
+				console.log("here");
 			}
-			$(this).next().slideToggle(900);
+			
+			$(this).next().slideToggle(400);
+			$(this).next().show('fast'); 
+ 		 
 		});
 
-		$('#accordion ul:eq(0)').show();
+	//	$('#accordion ul:eq(0)').show('slow');
