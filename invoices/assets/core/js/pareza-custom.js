@@ -20,7 +20,7 @@
 	  //$(this).parent().find('.dropdown-menu').toggleClass('showHeight');
   //});
 //});
-	  
+	 
 	  $("#accordion > li > div").click(function(){
 
 			if(false == $(this).next().is(':visible')) {
