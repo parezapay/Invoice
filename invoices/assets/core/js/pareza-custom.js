@@ -15,8 +15,18 @@
 //  });
 //}
 
-$(document).ready(function(){
-  $(".dropdown-btn").click(function(){
-	  $(this).parent().find('.dropdown-menu').toggleClass('showHeight');
-  });
-});
+//$(document).ready(function(){
+ // $(".dropdown-btn").click(function(){
+	  //$(this).parent().find('.dropdown-menu').toggleClass('showHeight');
+  //});
+//});
+	  
+	  $("#accordion > li > div").click(function(){
+
+			if(false == $(this).next().is(':visible')) {
+				$('#accordion ul').slideUp(900);
+			}
+			$(this).next().slideToggle(900);
+		});
+
+		$('#accordion ul:eq(0)').show();

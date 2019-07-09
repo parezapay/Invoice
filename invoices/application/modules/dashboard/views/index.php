@@ -438,14 +438,14 @@
 
         <thead>
         <tr>
-            <th><?php _trans('status'); ?></th>
-            <th><?php _trans('invoice'); ?></th>
-            <th><?php _trans('created'); ?></th>
-            <th><?php _trans('due_date'); ?></th>
-            <th><?php _trans('client_name'); ?></th>
-            <th style="text-align: left;"><?php _trans('amount'); ?></th>
-            <th style="text-align: left;"><?php _trans('balance'); ?></th>
-            <th><?php _trans('options'); ?></th>
+            <th><?php _trans('Invoice Number'); ?></th>
+            <th><?php _trans('Client Name'); ?></th>
+            <th><?php _trans('Date'); ?></th>
+            <th><?php _trans('Amount'); ?></th>
+            <th><?php _trans('Balance'); ?></th>
+            <th style="text-align: left;"><?php _trans('Due Date'); ?></th>
+            <th style="text-align: center;"><?php _trans('Status'); ?></th>
+            <th><?php _trans('Options'); ?></th>
         </tr>
         </thead>
 
@@ -463,6 +463,45 @@
             $dropup = $invoice_idx > $invoice_list_split ? true : false;
             ?>
             <tr >
+            
+            	<td>
+                    <a href="<?php echo site_url('invoices/view/' . $invoice->invoice_id); ?>"
+                       title="<?php _trans('edit'); ?>">
+                        <?php echo($invoice->invoice_number ? $invoice->invoice_number : $invoice->invoice_id); ?>
+                    </a>
+                </td>
+                
+                
+                <td>
+                    <a href="<?php echo site_url('clients/view/' . $invoice->client_id); ?>"
+                       title="<?php _trans('view_client'); ?>">
+                        <?php _htmlsc(format_client($invoice)); ?>
+                    </a>
+                </td>
+                
+                <td>
+                    <?php echo date_from_mysql($invoice->invoice_date_created); ?>
+                </td>
+                
+                <td class="amount <?php if ($invoice->invoice_sign == '-1') {
+                    echo 'text-danger';
+                }; ?>">
+                    <?php echo format_currency($invoice->invoice_total); ?>
+                </td>
+                
+                <td class="amount">
+                    <?php echo format_currency($invoice->invoice_balance); ?>
+                </td>
+                
+                <td>
+                    <span class="<?php if ($invoice->is_overdue) { ?>font-overdue<?php } ?>">
+                        <?php echo date_from_mysql($invoice->invoice_date_due); ?>
+                    </span>
+                </td>
+                
+
+                
+                
                 <td >
                     <span class="label <?php echo $invoice_statuses[$invoice->invoice_status_id]['class']; ?>">
                         <?php echo $invoice_statuses[$invoice->invoice_status_id]['label'];
@@ -476,40 +515,20 @@
                         <?php }; ?>
                     </span>
                 </td>
+                
+                
 
-                <td>
-                    <a href="<?php echo site_url('invoices/view/' . $invoice->invoice_id); ?>"
-                       title="<?php _trans('edit'); ?>">
-                        <?php echo($invoice->invoice_number ? $invoice->invoice_number : $invoice->invoice_id); ?>
-                    </a>
-                </td>
+                
+                
+                
 
-                <td>
-                    <?php echo date_from_mysql($invoice->invoice_date_created); ?>
-                </td>
+                
 
-                <td>
-                    <span class="<?php if ($invoice->is_overdue) { ?>font-overdue<?php } ?>">
-                        <?php echo date_from_mysql($invoice->invoice_date_due); ?>
-                    </span>
-                </td>
+                
 
-                <td>
-                    <a href="<?php echo site_url('clients/view/' . $invoice->client_id); ?>"
-                       title="<?php _trans('view_client'); ?>">
-                        <?php _htmlsc(format_client($invoice)); ?>
-                    </a>
-                </td>
+                
 
-                <td class="amount <?php if ($invoice->invoice_sign == '-1') {
-                    echo 'text-danger';
-                }; ?>">
-                    <?php echo format_currency($invoice->invoice_total); ?>
-                </td>
-
-                <td class="amount">
-                    <?php echo format_currency($invoice->invoice_balance); ?>
-                </td>
+                
 
                 <td>
                     <div class="options btn-group<?php echo $dropup ? ' dropup' : ''; ?>">
