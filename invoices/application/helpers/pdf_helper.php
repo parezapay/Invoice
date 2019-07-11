@@ -99,7 +99,26 @@ function generate_invoice_pdf($invoice_id, $stream = true, $invoice_template = n
         'custom_fields' => $custom_fields,
     );
 
+    
+    // error_reporting(E_ALL);
+     //ini_set('display_errors', 1);
+    // Load library in your controller
+    $CI = &get_instance();
+    $CI->load->library('InfiQr');
+    // we building raw data
+    $codeContents   = 'Invoice# '.$data[invoice]->invoice_number."\n";
+    $codeContents  .= 'Name: '.$data[invoice]->user_name."\n";
+    $codeContents  .= 'Total Amount: '.$data[invoice]->invoice_total."\n";
+    $codeContents  .= 'Invoice Date: '.$data[invoice]->invoice_date_created."\n";
+    $codeContents  .= 'Invoice Due Date: '.$data[invoice]->invoice_date_due."\n";
+   // print $codeContents;exit;
+    $qrc= $CI->infiqr->generate($codeContents,'png',$data[invoice]->invoice_number);
+   // print_r($data);
+    // exit;
     $html = $CI->load->view('invoice_templates/pdf/' . $invoice_template, $data, true);
+    
+ 
+  
 
     $CI->load->helper('mpdf');
     return pdf_create($html, trans('invoice') . '_' . str_replace(array('\\', '/'), '_', $invoice->invoice_number),

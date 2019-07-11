@@ -9,13 +9,14 @@
 </head>
 <body>
 <header class="clearfix">
-
+ 
     <div id="logo">
         <?php echo invoice_logo_pdf(); ?>
     </div>
 
     <div id="client">
         <div>
+        <p><img src="<?php echo  base_url()."uploads/".$invoice->invoice_number.".png"?>" /></p>
             <b><?php _htmlsc(format_client($invoice)); ?></b>
         </div>
         <?php if ($invoice->client_vat_id) {

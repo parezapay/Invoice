@@ -157,8 +157,18 @@ class Invoices extends Admin_Controller
      */
     public function view($invoice_id)
     {
+ /*        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
+        // Load library in your controller
+        $this->load->library('InfiQr');
+        $phoneNo = '(049)012-345-678';
         
-        
+        // we building raw data
+        $codeContents = 'Invoice#'.$phoneNo; 
+        $this->infiqr->generate($codeContents,'png');
+         */
+     
+     
         $this->load->model(
             [
                 'mdl_items',
